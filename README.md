@@ -17,25 +17,8 @@
 - at this stage, you should adapt the previously created pages according to the layout for different window sizes up to 320px.
   **[Week 4](#week-4)**: Additional functionality.
 - at this stage, additional functionality is going to be added to previously designed pages: slider, pagination, popup.
-
-## Task verification
-
-- The task will be checked by the cross-check flow. **There will be 3 checks in total, at each stage of the task.** [How to perform cross-check](https://docs.app.rs.school/#/platform/cross-check-flow).
-  - [Cross-check evaluation criteria. Week 1](#cross-check-evaluation-criteria-week-1).
-  - [Cross-check evaluation criteria. Week 2](#cross-check-evaluation-criteria-week-2).
-  - [Cross-check evaluation criteria. Week 3](#cross-check-evaluation-criteria-week-3).
-  - [Cross-check evaluation criteria. Week 4](#cross-check-evaluation-criteria-week-4)
-
-## Creation of a copy of the layout
-
-The first thing to do is create your copy of the Figma designs. To do so:
-
-- authorize on [Figma](https://www.figma.com/);
-- navigate to the [layout](https://www.figma.com/file/tKcmzkARtMUFQAR9VLdLkl/shelter-dom);
-- on the top toolbar, click on the arrow next to the layout name;
-- in the menu that appears, select _"Duplicate to your drafts"_;
-- in the main menu (upper left button) select _"Back to files"_;
-- open a copy of the layout which is marked as _"In Drafts"_;
+## Layout
+- [Figma layout](https://www.figma.com/file/tKcmzkARtMUFQAR9VLdLkl/shelter-dom);
 
 ## Technical requirements
 
@@ -64,7 +47,7 @@ Please pay attention to the following points:
 
 ## Repository requirements
 
-- Create a public repository named shelter on your GitHub account.
+- Public repository named shelter on your GitHub account.
 - You may use the example of project structure below. Since the project will contain several pages (2), at the same level as `assets` there will be the `pages` directory. Inside `pages`, in the `main` folder (same as the page name), the `.html`, `.css` and `.js` files related to this page will be stored. The `assets` directory will still contain images, icons, and font files if any. The folders inside `assets` will be named depending on the content: `images`, `icons`, `fonts`. Example below:
 - ![shelter folder structure](./src/img/shelter-folder-structure.jpg)
 - You should deploy your task using gh-pages or by any other means.
