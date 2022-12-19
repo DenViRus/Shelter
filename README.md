@@ -1,6 +1,6 @@
 # ![](./src/pic/greenvir30.png) Shelter ![](./src/pic/violetvir30.png)
 
-1. [[Demo Week 1]()]
+1. [[Demo Week 1](https://DenViRus.github.io/Shelter/src/pages/main/main.html)]
 
 ---
 
@@ -13,9 +13,11 @@
 **[Week 2](#week-2)**: Static markup of the `pets` page.
 
 - at these stages, you should create a static markup for the two pages. With the fixed layout, the pages look identical if the window width is at least 1280px.
-  **[Week 3](#week-3)**: Responsive markup.
+
+**[Week 3](#week-3)**: Responsive markup.
 - at this stage, you should adapt the previously created pages according to the layout for different window sizes up to 320px.
-  **[Week 4](#week-4)**: Additional functionality.
+
+**[Week 4](#week-4)**: Additional functionality.
 - at this stage, additional functionality is going to be added to previously designed pages: slider, pagination, popup.
 ## Layout
 - [Figma layout](https://www.figma.com/file/tKcmzkARtMUFQAR9VLdLkl/shelter-dom);
@@ -56,15 +58,18 @@ Please pay attention to the following points:
 ## Useful links
 
 Fonts can be found here:
+
 [Arial, google fonts](https://www.fonts.com/font/monotype/arial?QueryFontType=Web&src=GoogleWebFonts)
+
 [Georgia, google fonts](https://www.fonts.com/font/microsoft-corporation/georgia?QueryFontType=Web&src=GoogleWebFonts)
+
 You can connect fonts by either downloading local files or connecting fonts via URL to google fonts. If you can't find or download the font you need, just replace it with a font with the same serif type.
 
 ## Week 1
 
 The original width of the provided layout is 1280px. The width of the wrapper or guide columns is 1200px. The sizes of internal blocks are recommended to be set in relative values (%, vw) in order not to rewrite CSS styles for responsive layout.
 When the window width is above 1280px, the layout should remain centered, and not stretch to the full width of the window. To fill the free space, you can either stretch the backgrounds of the corresponding blocks to the entire width of the window, or use any of the colors present in the [designs](https://www.figma.com/file/tKcmzkARtMUFQAR9VLdLkl/shelter-dom):
-![small-bg-example-1280](https://user-images.githubusercontent.com/73646765/161041203-e22754f4-7bf0-4679-982a-aa6de81783e7.jpg)
+![small-bg-example-1280](./src/img/header-week-1.jpg)
 
 #### Desktop version of the Main page (60 points)
 
@@ -129,6 +134,7 @@ If during the check, you don't know whether to lower the score or not, then you 
 - The background color of the block or element differs from the design (does not apply to the position of the gradient or stretched image): **-1** for each block.
 - Missing element or picture, both background and element picture: **-1** for each block.
 - font-family is not included, or difference in font size is more than 4px: **-1** per block.
+
   The _Main page_ is created **+60**.
 
 1. The **Header** block is absent: **-10**.
