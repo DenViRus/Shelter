@@ -1,6 +1,6 @@
 # ![](./src/assets/pic/readme-pic/greenvir30.png) Shelter ![](./src/assets/pic/readme-pic/violetvir30.png)
 
-1. [[Demo Week 1](https://DenViRus.github.io/Shelter/src/pages/main/main.html)]
+1. [Demo Week 1](https://DenViRus.github.io/Shelter/src/pages/main/main.html)
 
 ---
 
