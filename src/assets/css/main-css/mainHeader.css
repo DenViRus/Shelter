@@ -1,0 +1,96 @@
+.main-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* logo start */
+.main-header-logo-box {
+  width: 18.6rem;
+  margin-left: 0.9rem;
+  border-radius: 1.5rem;
+  transition: all 0.5s;
+}
+
+.main-header-logo-heading {
+  font-size: 3.2rem;
+  line-height: 3.5rem;
+  color: var(--colorPrimary);
+  margin: 0;
+  transition: all 0.5s;
+}
+
+.main-header-logo-paragraph {
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.1em;
+  color: rgb(255, 255, 255);
+  margin-top: 1rem;
+  margin-left: 0.4rem;
+  transition: all 0.5s;
+}
+
+.main-header-logo-box:hover {
+  background-color: rgb(56, 48, 52);
+  animation: mainHeaderLogoBoxAnimation 1s linear;
+}
+
+.main-header-logo-box:hover .main-header-logo-heading {
+  color: var(--colorGold);
+}
+
+.main-header-logo-box:hover .main-header-logo-paragraph {
+  color: var(--colorSilver);
+}
+
+@keyframes mainHeaderLogoBoxAnimation {
+  to {
+    transform: rotateY(360deg);
+  }
+}
+/* logo finish */
+
+/* nav start */
+.main-header-nav-box {
+  width: 44.5rem;
+  margin-left: auto;
+  margin-top: -0.2rem;
+  margin-right: -1rem;
+}
+
+.main-header-nav-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-header-nav-list-item-link {
+  position: relative;
+  font-family: var(--paragraphStyle);
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  color: var(--colorMainHeaderText);
+}
+
+.main-header-nav-list-item-link.active-link {
+  color: var(--colorWhite);
+}
+
+.main-header-nav-list-item-link:hover {
+  color: var(--colorWhite);
+}
+
+.main-header-nav-list .main-header-nav-list-item-link.active-link::after,
+.main-header-nav-list .main-header-nav-list-item-link:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -0.5rem;
+
+  display: block;
+  height: 3px;
+  background-color: var(--colorPrimary);
+  border-radius: 5rem;
+}
+
+/* nav finish */

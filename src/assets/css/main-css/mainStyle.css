@@ -1,0 +1,112 @@
+html {
+  font-size: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+:root {
+  /* --heading-style: "Nerko One", cursive;
+  --paragraph-style: "Lobster", cursive;
+  --link-style: 'Roboto', sans-serif;
+
+  --heading-size: 1.5rem;
+  --paragraph-size: 1.2rem;
+
+  --item-heading-size: 1.3rem;
+  --item-paragraph-size: 1.1rem;
+  --link-size: 1.1rem;
+  --link-hover-size: 1.3rem;
+
+
+  --text-color: rgb(255, 255, 255);
+  --item-paragraph-color: rgb(192, 192, 192);
+  --link-color: rgb(0, 0, 255);
+  --hover-color: rgb(255, 215, 0); */
+
+  --headingStyle: Georgia, "RobotoSansSerif", sans-serif;
+  --paragraphStyle: Arial, "GelasioSerif", serif;
+
+  --headingFontSize: 3.5rem;
+  --paragraphFontSize: 2rem;
+
+  --headingLineHeight: 4.5rem;
+  --paragraphLineHeight: 2.3rem;
+
+  --letterSpacing: 0.06em;
+
+
+  --mainRowWidth: 120rem;
+
+  --colorPrimary: rgb(241, 205, 179);
+  --colorHeading: rgb(84, 84, 84);
+
+  --colorMainHeaderText: rgb(205, 205, 205);
+  --colorMainHeaderHoverText: rgb(205, 205, 205);
+
+
+  --colorWhite: rgb(255, 255, 255);
+  --colorGold: rgb(255, 215, 0);
+  --colorSilver: rgb(192, 192, 192);
+}
+
+.main-box {
+  position: relative;
+  padding-top: 6rem;
+}
+
+.startSreen {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 91rem;
+  background-color: rgb(33, 31, 32);
+  z-index: -999;
+}
+
+.startSreen-backgroundImage {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-image: url(./../../img/main-img/mainBackground.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.startSreen-backgroundGradient {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-image: url(./../../img/main-img/linesTransparent.png), radial-gradient(100% 215.42% at 0% 0%, rgb(91, 72, 58) 0%, rgb(38, 36, 37) 100%);
+}
+
+.main-row {
+  width: var(--mainRowWidth);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heading {
+  font-family: var(--headingStyle);
+  font-size: var(--headingFontSize);
+  line-height: var(--headingLineHeight);
+  letter-spacing: var(--letterSpacing);
+  font-style: normal;
+  font-weight: 400;
+  color: var(--colorHeading);
+}
+
+.paragraph {
+  font-family: var(--paragraphStyle);
+  font-size: var(--paragraphFontSize);
+  line-height: var(--paragraphLineHeight);
+  letter-spacing: var(--letterSpacing);
+  font-style: normal;
+  font-weight: 400;
+}
