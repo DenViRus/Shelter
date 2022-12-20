@@ -1,18 +1,22 @@
-.main-header-row {
+.header {
+  margin-top: 6rem;
+}
+
+.header-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 /* logo start */
-.main-header-logo-box {
+.header-logo-box {
   width: 18.6rem;
   margin-left: 0.9rem;
   border-radius: 1.5rem;
   transition: all 0.5s;
 }
 
-.main-header-logo-heading {
+.header-logo-heading {
   font-size: 3.2rem;
   line-height: 3.5rem;
   color: var(--colorPrimary);
@@ -20,7 +24,7 @@
   transition: all 0.5s;
 }
 
-.main-header-logo-paragraph {
+.header-logo-paragraph {
   font-size: 1.3rem;
   line-height: 1.5rem;
   letter-spacing: 0.1em;
@@ -30,20 +34,20 @@
   transition: all 0.5s;
 }
 
-.main-header-logo-box:hover {
+.header-logo-box:hover {
   background-color: rgb(56, 48, 52);
-  animation: mainHeaderLogoBoxAnimation 1s linear;
+  animation: headerLogoBoxAnimation 1s linear;
 }
 
-.main-header-logo-box:hover .main-header-logo-heading {
+.header-logo-box:hover .header-logo-heading {
   color: var(--colorGold);
 }
 
-.main-header-logo-box:hover .main-header-logo-paragraph {
+.header-logo-box:hover .header-logo-paragraph {
   color: var(--colorSilver);
 }
 
-@keyframes mainHeaderLogoBoxAnimation {
+@keyframes headerLogoBoxAnimation {
   to {
     transform: rotateY(360deg);
   }
@@ -51,36 +55,37 @@
 /* logo finish */
 
 /* nav start */
-.main-header-nav-box {
+.header-nav-box {
   width: 44.5rem;
   margin-left: auto;
   margin-top: -0.2rem;
   margin-right: -1rem;
 }
 
-.main-header-nav-list {
+.header-nav-list {
   display: flex;
   justify-content: space-between;
 }
 
-.main-header-nav-list-item-link {
+.header-nav-list-item-link {
   position: relative;
   font-family: var(--paragraphStyle);
   font-size: 1.5rem;
   line-height: 2.4rem;
-  color: var(--colorMainHeaderText);
+  color: var(--colorHeaderText);
+  transition: all 0.5s;
 }
 
-.main-header-nav-list-item-link.active-link {
-  color: var(--colorWhite);
+.header-nav-list-item-link.active-link {
+  color: var(--colorHeaderHoverText);
 }
 
-.main-header-nav-list-item-link:hover {
-  color: var(--colorWhite);
+.header-nav-list-item-link:hover {
+  color: var(--colorHeaderHoverText);
 }
 
-.main-header-nav-list .main-header-nav-list-item-link.active-link::after,
-.main-header-nav-list .main-header-nav-list-item-link:hover::after {
+.header-nav-list .header-nav-list-item-link.active-link::after,
+.header-nav-list .header-nav-list-item-link:hover::after {
   content: "";
   position: absolute;
   left: 0;
@@ -92,5 +97,4 @@
   background-color: var(--colorPrimary);
   border-radius: 5rem;
 }
-
 /* nav finish */
