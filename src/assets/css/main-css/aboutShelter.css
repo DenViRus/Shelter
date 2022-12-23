@@ -1,0 +1,31 @@
+.section-aboutShelter {
+  background-color: var(--colorLightxl);
+  padding-top: 7.8rem;
+  padding-bottom: 10rem;
+}
+
+.aboutShelter-row {
+  display: flex;
+}
+
+.aboutShelter-img-box {
+  width: var(--aboutShelterImgWidth);
+  margin-left: 18.2rem;
+}
+
+.aboutShelter-content-box {
+  width: var(--aboutShelterContWidth);
+  display: flex;
+  flex-direction: column;
+  margin-left: 12.2rem;
+}
+
+.aboutShelter-heading {
+  color: var(--colorDarkxl);
+  width: 86.5%;
+  margin-top: 1.4rem;
+}
+
+.aboutShelter-paragraph {
+  margin-top: 2.5rem;
+}

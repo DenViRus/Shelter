@@ -1,0 +1,131 @@
+.section-ourFriends {
+  background-color: var(--colorLightl);
+  padding-top: 8rem;
+  padding-bottom: 10rem;
+}
+
+.ourFriends-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ourFriends-heading {
+  text-align: center;
+  width: 33.5%;
+  margin-left: 2rem;
+}
+
+.ourFriends-slider-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6rem;
+  margin-left: 1.7rem;
+}
+
+.ourFriends-slider-button {
+  width: 5.2rem;
+  height: 5.2rem;
+  border: 0.3rem solid var(--colorPrime);
+  border-radius: 10rem;
+}
+
+.ourFriends-arrow-icon {
+  width: 2rem;
+  vertical-align: middle;
+}
+
+.ourFriends-next-icon {
+  transform: rotate(-180deg);
+}
+
+.ourFriends-slider-button:hover {
+  background-color: var(--colorPrime);
+  box-shadow: var(--hoverShadow);
+}
+
+.ourFriends-slider-button:hover .ourFriends-arrow-icon {
+  scale: 120%;
+}
+
+.ourFriends-slider {
+  width: var(--ourFriendsSlidWidth);
+  display: flex;
+  justify-content: space-between;
+}
+
+.ourFriends-slider-card {
+  width: var(--ourFriendsCardWidth);
+  background-color: var(--colorLightS);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 3rem;
+  border-radius: 1rem;
+}
+
+.ourFriends-slider-card-img-box {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.ourFriends-slider-card-heading {
+  margin-top: 3rem;
+}
+
+.ourFriends-slider-card-link {
+  border: 0.3rem solid var(--colorPrime);
+  padding: 1.5rem 4.5rem;
+  border-radius: 10rem;
+  margin-top: 2.7rem;
+}
+
+.ourFriends-slider-card:hover {
+  background-color: var(--colorWhite);
+  scale: 103%;
+  box-shadow: var(--hoverShadow);
+  cursor: pointer;
+}
+
+.ourFriends-slider-card:hover .ourFriends-slider-card-heading {
+  color: var(--colorBlack);
+}
+
+.ourFriends-slider-card:hover .ourFriends-slider-card-link {
+  color: var(--colorBlack);
+  background-color: var(--colorPrime);
+}
+
+.ourFriends-slider-card-link:hover {
+  scale: 103%;
+  box-shadow: var(--hoverShadow);
+}
+
+.ourFriends-slider-card-link:active {
+  color: var(--colorDark3xl);
+  background-color: var(--colorPrime);
+  scale: 100%;
+}
+
+.ourFriends-link {
+  background-color: var(--colorPrime);
+  padding: 1.5rem 4.5rem;
+  margin-top: 5.6rem;
+  margin-left: 2rem;
+  border-radius: 10rem;
+}
+
+.ourFriends-link:hover {
+  color: var(--colorBlack);
+  background-color: var(--colorPrimeLight);
+  box-shadow: var(--hoverShadow);
+  scale: 103%;
+}
+
+.ourFriends-link:active {
+  color: var(--colorDark3xl);
+  background-color: var(--colorPrime);
+  scale: 100%;
+}
