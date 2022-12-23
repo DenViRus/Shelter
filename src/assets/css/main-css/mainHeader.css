@@ -10,37 +10,35 @@
 
 /* logo start */
 .header-logo-box {
-  width: 18.6rem;
-  margin-left: 0.9rem;
-  border-radius: 1.5rem;
-  transition: all 0.5s;
+  width: var(--headerLogoWidth);
+  border-radius: 1.6rem;
+  margin-left: .9rem;
 }
 
 .header-logo-heading {
-  font-size: 3.2rem;
-  line-height: 3.5rem;
-  color: var(--colorPrimary);
+  font-size: var(--logoHeadFZ);
+  line-height: var(--logoHeadLH);
+  color: var(--colorPrime);
   margin: 0;
-  transition: all 0.5s;
 }
 
 .header-logo-paragraph {
-  font-size: 1.3rem;
-  line-height: 1.5rem;
-  letter-spacing: 0.1em;
-  color: rgb(255, 255, 255);
+  font-family: var(--paragStyle);
+  font-size: var(--logoParagFZ);
+  line-height: var(--logoParagLH);
+  letter-spacing: var(--logoParagLS);
+  color: var(--colorLightxl);
   margin-top: 1rem;
-  margin-left: 0.4rem;
-  transition: all 0.5s;
+  margin-left: .3rem;
 }
 
 .header-logo-box:hover {
-  background-color: rgb(56, 48, 52);
+  background-color: rgb(38, 36, 37);
   animation: headerLogoBoxAnimation 1s linear;
 }
 
 .header-logo-box:hover .header-logo-heading {
-  color: var(--colorGold);
+  color: var(--colorPrimeLight);
 }
 
 .header-logo-box:hover .header-logo-paragraph {
@@ -56,32 +54,40 @@
 
 /* nav start */
 .header-nav-box {
-  width: 44.5rem;
+  width: var(--headerNavWidth);
   margin-left: auto;
-  margin-top: -0.2rem;
+  margin-top: -.5rem;
   margin-right: -1rem;
 }
 
 .header-nav-list {
   display: flex;
-  justify-content: space-between;
+}
+
+.header-nav-list-item:first-child {
+  margin-right: 3.5rem;
+}
+
+.header-nav-list-item:nth-child(2){
+  margin-right: 3.5rem;
+}
+
+.header-nav-list-item:last-child {
+margin-left: auto;
+margin-right: .3rem;
 }
 
 .header-nav-list-item-link {
   position: relative;
-  font-family: var(--paragraphStyle);
-  font-size: 1.5rem;
-  line-height: 2.4rem;
-  color: var(--colorHeaderText);
-  transition: all 0.5s;
+  color: var(--colorDarkS);
 }
 
 .header-nav-list-item-link.active-link {
-  color: var(--colorHeaderHoverText);
+  color: var(--colorLightS);
 }
 
 .header-nav-list-item-link:hover {
-  color: var(--colorHeaderHoverText);
+  color: var(--colorLightS);
 }
 
 .header-nav-list .header-nav-list-item-link.active-link::after,
@@ -90,11 +96,10 @@
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -0.5rem;
-
+  bottom: -.6rem;
   display: block;
-  height: 3px;
-  background-color: var(--colorPrimary);
-  border-radius: 5rem;
+  height: .3rem;
+  background-color: var(--colorPrime);
+  border-radius: 10rem;
 }
 /* nav finish */

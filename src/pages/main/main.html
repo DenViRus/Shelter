@@ -12,63 +12,128 @@
   <body>
     <div class="main-box" id="mainBox">
       <div class="startSreen" id="startSreen">
-         <!-- header start -->
-      <header class="header" id="header">
-        <div class="row header-row">
-          <div class="header-logo-box">
-            <a class="header-logo" href="#startSreen" id="headerLogo">
-              <h1 class="heading header-logo-heading">Cozy House</h1>
-              <p class="paragraph header-logo-paragraph">Shelter for pets in Boston</p>
-            </a>
+        <!-- header start -->
+        <header class="header" id="header">
+          <div class="row header-row">
+            <div class="header-logo-box">
+              <a class="header-logo" href="#startSreen" id="headerLogo">
+                <h1 class="heading header-logo-heading">Cozy House</h1>
+                <p class="header-logo-paragraph">Shelter for pets in Boston</p>
+              </a>
+            </div>
+            <div class="header-nav-box">
+              <nav class="header-nav" id="headerNav">
+                <ul class="header-nav-list">
+                  <li class="header-nav-list-item">
+                    <a class="paragraph header-nav-list-item-link active-link" href="#">About the shelter</a>
+                  </li>
+                  <li class="header-nav-list-item">
+                    <a class="paragraph header-nav-list-item-link" href="#">Our pets</a>
+                  </li>
+                  <li class="header-nav-list-item">
+                    <a class="paragraph header-nav-list-item-link" href="#">Help the shelter</a>
+                  </li>
+                  <li class="header-nav-list-item">
+                    <a class="paragraph header-nav-list-item-link" href="#">Contacts</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
           </div>
-          <div class="header-nav-box">
-            <nav class="header-nav" id="headerNav">
-              <ul class="header-nav-list">
-                <li class="header-nav-list-item">
-                  <a  class="header-nav-list-item-link active-link" href="#">About the shelter</a>
-                </li>
-                <li class="header-nav-list-item">
-                  <a  class="header-nav-list-item-link" href="#">Our pets</a>
-                </li>
-                <li class="header-nav-list-item">
-                  <a  class="header-nav-list-item-link" href="#">Help the shelter</a>
-                </li>
-                <li class="header-nav-list-item">
-                  <a  class="header-nav-list-item-link" href="#">Contacts</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </header>
-      <!-- header finish -->
+        </header>
+        <!-- header finish -->
 
-      <!-- section notOnly start -->
-      <section class="section notOnly-section" id="notOnlySection">
-        <div class="row notOnly-row">
-          <div class="notOnly-content-box">
-            <h2 class="heading notOnly-heading">Not only people need a house</h2>
-            <p class="paragraph notOnly-paragraph">We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</p>
-            <a class="notOnly-link" href="#">Make a friend</a>
+        <!-- section notOnly start -->
+        <section class="section section-notOnly" id="sectionNotOnly">
+          <div class="row notOnly-row">
+            <div class="notOnly-content-box">
+              <h2 class="section-heading notOnly-heading">Not only people need a house</h2>
+              <p class="paragraph notOnly-paragraph">We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</p>
+              <a class="link notOnly-link" href="#" id="notOnlyLink">Make a friend</a>
+            </div>
+            <div class="notOnly-img-box">
+              <img class="notOnly-img" src="./../../assets/img/main-img/start-screen-puppy.png" alt="puppy image" />
+            </div>
           </div>
-          <div class="notOnly-img-box">
-            <img class="notOnly-img" src="./../../assets/img/main-img/start-screen-puppy.png" alt="puppy image">
-          </div>
-        </div>
-      </section>
-      <!-- section notOnly finish -->
+        </section>
+        <!-- section notOnly finish -->
       </div>
 
-
       <!-- main start -->
-      <main class="main-main" id="mainMain">
-        <div class="main-row main-main-row"></div>
-      </main>
+      <main class="main" id="main">
+        <section class="section section-aboutShelter" id="sectionAboutShelter">
+          <div class="row aboutShelter-row">
+            <div class="aboutShelter-img-box">
+              <img class="aboutShelter-img" src="../../assets/img/main-img/about-pets.png" alt="pets image" />
+            </div>
+            <div class="aboutShelter-content-box">
+              <h3 class="section-heading aboutShelter-heading">About the shelter “Cozy House”</h3>
+              <p class="paragraph aboutShelter-paragraph">
+                Currently we have 121 dogs and 342 cats on our hands and statistics show that only 20% of them will find a family. The others will continue to live with us and will be waiting for a lucky chance to become dearly loved.
+              </p>
+              <p class="paragraph aboutShelter-paragraph">
+                We feed our wards with the best food and make sure that they do not get sick, feel comfortable (including psychologically) and well. We are supported by 87 volunteers and 28 employees of various skill levels. About 12% of the animals
+                are taken by the shelter staff. Taking care of the animals, they become attached to the pets and would hardly ever leave them alone.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-ourFriends" id="sectionOurFriends">
+          <div class="row ourFriends-row">
+            <h3 class="section-heading ourFriends-heading">
+              Our friends who<br />
+              are looking for a house
+            </h3>
+            <div class="ourFriends-slider-box">
+              <button class="ourFriends-slider-button ourFriends-prev-button" id="ourFriendsPrevButton">
+                <img class="ourFriends-arrow-icon ourFriends-prev-icon" src="./../../assets/icon/main-icon/arrow.png" alt="previous arrow" />
+              </button>
+              <div class="ourFriends-slider" id="ourFriendsSlider">
+
+                <div class="ourFriends-slider-card" id="ourFriendsKatrineCard">
+                  <div class="ourFriends-slider-card-img-box">
+                    <img class="ourFriends-slider-card-img" src="./../../assets/img/main-img/pets-katrine.png" alt="cat Katrine image" />
+                  </div>
+                  <h4 class="card-heading ourFriends-slider-card-heading">Katrine</h4>
+                  <a class="link ourFriends-slider-card-link" href="#" id="ourFriendsKatrineLink">Learn more</a>
+                </div>
+
+                <div class="ourFriends-slider-card" id="ourFriendsJenniferCard">
+                  <div class="ourFriends-slider-card-img-box">
+                    <img class="ourFriends-slider-card-img" src="./../../assets/img/main-img/pets-jennifer.png" alt="dog Jennifer image" />
+                  </div>
+                  <h4 class="card-heading ourFriends-slider-card-heading">Jennifer</h4>
+                  <a class="link ourFriends-slider-card-link" href="#" id="ourFriendsJenniferLink">Learn more</a>
+                </div>
+
+                <div class="ourFriends-slider-card" id="ourFriendsWoodyCard">
+                  <div class="ourFriends-slider-card-img-box">
+                    <img class="ourFriends-slider-card-img" src="./../../assets/img/main-img/pets-woody.png" alt="dog Woody image" />
+                  </div>
+                  <h4 class="card-heading ourFriends-slider-card-heading">Woody</h4>
+                  <a class="link ourFriends-slider-card-link" href="#">Learn more</a>
+                </div>
+              </div>
+              <button class="ourFriends-slider-button ourFriends-next-button" id="ourFriendsNextButton">
+                <img class="ourFriends-arrow-icon ourFriends-next-icon" src="./../../assets/icon/main-icon/arrow.png" alt="next arrow" />
+              </button>
+            </div>
+            <a class="link ourFriends-link" href="#" id="ourFriendsLink">Get to know the rest</a>
+          </div>
+        </section>
+
+        <section class="section section-youCanHelp" id="sectionYouCanHelp">
+          <div class="row youCanHelp-row"></div>
+        </section>
+
+
+      </main> -->
       <!-- main finish -->
 
       <!-- footer start -->
-      <footer class="main-footer" id="mainFooter">
-        <div class="main-row main-main-row"></div>
+      <!-- <footer class="footer" id="Footer">
+        <div class="row footer-row"></div>
       </footer>
       <!-- footer finish -->
     </div>
