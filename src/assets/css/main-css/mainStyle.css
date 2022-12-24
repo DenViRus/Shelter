@@ -2,16 +2,20 @@ html {
   font-size: 10px;
 }
 
-.hidden {
-  display: none;
+* {
   font-style: normal;
   font-weight: 400;
+}
+
+.hidden {
+  display: none;
 }
 
 :root {
   --headStyle: Georgia, "RobotoSansSerif", sans-serif;
   --paragStyle: Arial, "GelasioSerif", serif;
   --colorBlack: rgb(0, 0, 0);
+  --colorGreeny: rgba(29, 179, 29);
   --colorWhite: rgb(255, 255, 255);
   --colorSilver: rgb(192, 192, 192);
 
@@ -52,6 +56,9 @@ html {
   --cardHeadFZ: 2rem;
   --cardHeadLH: 1.15em;
 
+  --donationParagFZ: 1.2rem;
+  --donationParagLH: 1.5em;
+
   --startSreenHeight: 910px;
   --mainRowWidth: 1200px;
 
@@ -66,6 +73,9 @@ html {
 
   --ourFriendsSlidWidth: 82.5%;
   --ourFriendsCardWidth: 27.3%;
+
+  --donationImgWidth: 42.5%;
+  --donationContWidth: 32%;
 
 
 }
@@ -97,6 +107,14 @@ html {
   width: var(--mainRowWidth);
   margin-left: auto;
   margin-right: auto;
+}
+
+.main .section:nth-child(odd) {
+  background-color: var(--colorLightxl);
+}
+
+.main .section:nth-child(even) {
+  background-color: var(--colorLightl);
 }
 
 .heading {
