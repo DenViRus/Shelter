@@ -1,0 +1,77 @@
+.section-donation {
+  padding-top: 8.2rem;
+  padding-bottom: 10rem;
+}
+
+.donation-row {
+  display: flex;
+  align-items: center;
+}
+
+.donation-img-box {
+  width: var(--donationImgWidth);
+  margin-left: 15rem;
+}
+
+.donation-content-box {
+  width: var(--donationContWidth);
+  margin-left: 2.5rem;
+}
+
+.donation-heading {
+  width: 78.5%;
+}
+
+.donation-subHeading {
+  font-size: var(--paragFZ);
+  line-height: var(--logoHeadLH);
+  color: var(--colorDarkl);
+  margin-top: 2rem;
+}
+
+.donation-link {
+  background-color: var(--colorPrime);
+  display: flex;
+  width: 91.5%;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  margin-top: 1.8rem;
+}
+
+.donation-link-svg-box {
+  width: 3rem;
+}
+
+.donation-link-text {
+  margin-left: 1.5rem;
+}
+
+.donation-link:hover {
+  background-color: var(--colorPrimeLight);
+  box-shadow: var(--hoverShadow);
+  scale: 103%;
+}
+
+.donation-link:hover .donation-link-text {
+  color: var(--colorBlack);
+}
+
+.donation-link:hover .donation-link-svg {
+  fill: var(--colorBlack);
+}
+
+.donation-link:active {
+  color: var(--colorDark3xl);
+  background-color: var(--colorPrime);
+  scale: 100%;
+}
+
+.donation-paragraph {
+  font-family: var(--paragStyle);
+  font-size: var(--donationParagFZ);
+  line-height: var(--donationParagLH);
+  font-style: italic;
+  font-size: 12px;
+  line-height: 18px;
+  margin-top: 1.8rem;
+}

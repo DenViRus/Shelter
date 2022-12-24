@@ -1,5 +1,4 @@
 .section-ourFriends {
-  background-color: var(--colorLightl);
   padding-top: 8rem;
   padding-bottom: 10rem;
 }
@@ -47,6 +46,7 @@
 }
 
 .ourFriends-slider-button:hover .ourFriends-arrow-icon {
+  color: var(--colorBlack);
   scale: 120%;
 }
 

@@ -1,0 +1,62 @@
+.section-youCanHelp {
+  padding-top: 8rem;
+  padding-bottom: 10rem;
+}
+
+.youCanHelp-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.youCanHelp-heading {
+  width: 26%;
+  text-align: center;
+  margin-left: 2rem;
+}
+
+.youCanHelp-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 12rem;
+  row-gap: 5.5rem;
+  margin-top: 5.9rem;
+  margin-left: 1.8rem;
+}
+
+.youCanHelp-item:first-child {
+  margin-left: 0;
+}
+
+.youCanHelp-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+.youCanHelp-card-svg-box {
+  width: 6rem;
+  height: 6rem;
+}
+
+.youCanHelp-card-heading {
+  margin-top: 3rem;
+}
+
+.youCanHelp-card:hover {
+  scale: 103%;
+  background-color: rgba(13, 13, 13, 0.04);
+  box-shadow: var(--hoverShadow);
+  cursor: pointer;
+}
+
+.youCanHelp-card:hover .youCanHelp-card-svg {
+  fill: rgb(38, 36, 37);
+}
+
+.youCanHelp-card:hover .youCanHelp-card-heading {
+  color: var(--colorBlack);
+}
