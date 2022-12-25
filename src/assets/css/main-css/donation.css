@@ -50,6 +50,7 @@
   background-color: var(--colorPrimeLight);
   box-shadow: var(--hoverShadow);
   scale: 103%;
+  cursor: pointer;
 }
 
 .donation-link:hover .donation-link-text {
