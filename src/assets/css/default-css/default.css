@@ -1,3 +1,113 @@
 @import "./normalize.css";
 @import "./reset.css";
 @import "./fonts.css";
+
+
+html {
+  font-size: 10px;
+}
+
+* {
+  font-style: normal;
+  font-weight: 400;
+}
+
+.hidden {
+  display: none;
+}
+
+:root {
+  --headStyle: Georgia, "RobotoSansSerif", sans-serif;
+  --paragStyle: Arial, "GelasioSerif", serif;
+  --colorBlack: rgb(0, 0, 0);
+  --colorWhite: rgb(255, 255, 255);
+  --colorSilver: rgb(192, 192, 192);
+
+  --colorLightxl: rgb(255, 255, 255);
+  --colorLightl: rgb(246, 246, 246);
+  --colorLightS: rgb(250, 250, 250);
+  --colorDarkS: rgb(205, 205, 205);
+  --colorDarkM: rgb(178, 178, 178);
+  --colorDarkl: rgb(84, 84, 84);
+  --colorDarkxl: rgb(76, 76, 76);
+  --colorDark2xl: rgb(68, 68, 68);
+  --colorDark3xl: rgb(41, 41, 41);
+  --colorPrime: rgb(241, 205, 179);
+  --colorPrimeLight: rgb(253, 220, 196);
+  --startScrBG: url(./../../img/main-img/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, rgb(91, 72, 58) 0%, rgb(38, 36, 37) 100%), rgb(33, 31, 32);
+  --footerBG: url(./../../img/main-img/noise_transparent@2x.png), radial-gradient(110.67% 538.64% at 5.73% 50%, rgb(81, 61, 47) 0%, rgb(26, 26, 28) 100%), rgb(33, 31, 32);
+  --hoverShadow: 0rem .2rem 3.5rem 1.4rem rgba(13, 13, 13, 0.04);
+
+  --logoHeadFZ: 3.2rem;
+  --logoHeadLH: 1.1em;
+
+  --logoParagFZ: 1.3rem;
+  --logoParagLH: 1.15em;
+  --logoParagLS: .1em;
+
+  --sectHeadFZ: 3.5rem;
+
+  --headLH: 1.3em;
+  --headLS: .06em;
+
+  --paragFZ: 1.5rem;
+  --paragLH: 1.6em;
+
+  --linkFZ: 1.7rem;
+
+  --cardHeadFZ: 2rem;
+  --cardHeadLH: 1.15em;
+
+  --footerHeight: 35rem;
+  --mainRowWidth: 1200px;
+
+  --headerLogoWidth: 15.5%;
+  --headerNavWidth: 37%;
+
+  --ourFriendsCardWidth: 27.3%;
+
+  --contactsWidth: 23.5%;
+  --locationWidth: 25.5%;
+  --footerImgWidth: 25%;
+}
+
+.row {
+  width: var(--mainRowWidth);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heading {
+  font-family: var(--headStyle);
+  letter-spacing: var(--headLS);
+}
+
+.paragraph {
+  font-family: var(--paragStyle);
+  font-size: var(--paragFZ);
+  line-height: var(--paragLH);
+}
+
+.section-heading {
+  font-family: var(--headStyle);
+  font-size: var(--sectHeadFZ);
+  line-height: var(--headLH);
+  letter-spacing: var(--headLS);
+  color: var(--colorDarkl);
+}
+
+.link {
+  font-family: var(--headStyle);
+  font-size: var(--linkFZ);
+  line-height: var(--headLH);
+  letter-spacing: var(--headLS);
+  color: var(--colorDark3xl);
+}
+
+.card-heading {
+  font-family: var(--headStyle);
+  font-size: var(--cardHeadFZ);
+  line-height: var(--cardHeadLH);
+  letter-spacing: var(--headLS);
+  color: var(--colorDarkl);
+}

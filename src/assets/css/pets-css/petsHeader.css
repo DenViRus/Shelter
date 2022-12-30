@@ -1,0 +1,97 @@
+.header {
+  background-color: var(--colorLightxl);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* logo start */
+.header-logo-box {
+  width: var(--headerLogoWidth);
+  border-radius: 1.6rem;
+  margin-left: .9rem;
+  opacity: .5;
+}
+
+.header-logo-heading {
+  font-size: var(--logoHeadFZ);
+  line-height: var(--logoHeadLH);
+  color: var(--colorDarkl);
+  margin: 0;
+}
+
+.header-logo-paragraph {
+  font-family: var(--paragStyle);
+  font-size: var(--logoParagFZ);
+  line-height: var(--logoParagLH);
+  letter-spacing: var(--logoParagLS);
+  color: var(--colorDark3xl);
+  margin-top: 1rem;
+  margin-left: .3rem;
+}
+
+.header-logo-box:hover {
+  opacity: 1;
+  background-color: rgba(13, 13, 13, 0.04);
+  box-shadow: var(--hoverShadow);
+}
+/* logo finish */
+
+/* nav start */
+.header-nav-box {
+  width: var(--headerNavWidth);
+  margin-left: auto;
+  margin-top: -.5rem;
+  margin-right: -1rem;
+}
+
+.header-nav-list {
+  display: flex;
+}
+
+.header-nav-item:first-child {
+  margin-right: 3.5rem;
+}
+
+.header-nav-item:nth-child(2){
+  margin-right: 3.5rem;
+}
+
+.header-nav-item:last-child {
+margin-left: auto;
+margin-right: .3rem;
+}
+
+.header-nav-link {
+  position: relative;
+  color: var(--colorDarkl);
+}
+
+.header-nav-link.active-link {
+  color: var(--colorDark3xl);
+}
+
+.header-nav-link:hover {
+  color: var(--colorDark3xl);
+}
+
+.header-nav-list .header-nav-link.active-link::after,
+.header-nav-list .header-nav-link:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -.6rem;
+  display: block;
+  height: .3rem;
+  background-color: var(--colorPrime);
+  border-radius: 10rem;
+}
+
+
+/* nav finish */
