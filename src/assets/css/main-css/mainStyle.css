@@ -1,5 +1,8 @@
 
 :root {
+  --startScrBG: url(./../../img/main-img/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, rgb(91, 72, 58) 0%, rgb(38, 36, 37) 100%), rgb(33, 31, 32);
+  --footerBG: url(./../../img/main-img/noise_transparent@2x.png), radial-gradient(110.67% 538.64% at 5.73% 50%, rgb(81, 61, 47) 0%, rgb(26, 26, 28) 100%), rgb(33, 31, 32);
+
   --notOnlyHeadFZ: 4.4rem;
 
   --donationParagFZ: 1.2rem;
@@ -14,6 +17,7 @@
   --aboutShelterContWidth: 35.5%;
 
   --ourFriendsSlidWidth: 82.5%;
+  --ourFriendsCardWidth: 27.3%;
 
   --donationImgWidth: 42.5%;
   --donationContWidth: 32%;

@@ -10,7 +10,9 @@
 ## Stages of task completion
 
 **[Week 1](#week-1)**: Static markup of the `main` page.
+
 ## Layout
+
 - [Figma layout](https://www.figma.com/file/tKcmzkARtMUFQAR9VLdLkl/shelter-dom);
 
 ## Technical requirements
@@ -180,7 +182,9 @@ If during the check, you don't know whether to lower the score or not, then you 
 ## Week 2
 
 JPG: **[shelter. Pets page. JPG](./src/assets/img/readme-img/shelter-pets-1280px.jpg)**
+
 1. **Header** (`<header>` contains only the logo and navigation bar)
+
 - Interactive navigation bar:
   - `Our pets` element should be highlighted by default;
   - highlighted `Our pets` element may not have hover effects.
@@ -190,20 +194,28 @@ JPG: **[shelter. Pets page. JPG](./src/assets/img/readme-img/shelter-pets-1280px
 - The logo is located on the left. The logo consists of text elements (i.e. not a picture). Clicking on the logo takes us to the _main page_.
 - There must be one `<h1>` element on the page. You can make it with the text `Cozy House`.
 - There is no need to make the header "sticky". It means what when scrolling, it remains in its position.
+
 2. **Our Friends** block
+
 - Four-column layout.
 - Pet cards should be interactive when hovering over any area of the card. Hovering over a card changes the cursor, highlights the `Learn more` button, and changes the background.
 - It is not necessary to open a modal window when clicking at this stage.
 - Pagination should be clickable on available buttons. This means that from position (1) we cannot go further to the left, i.e. to the smaller side. Gray buttons must have the attribute `disabled`, `data-disabled` or a modifier class.
+
 3. **Footer** (`<footer>` contains contacts, address and image):
+
 - Clicking on an email or its icon should open the mail service.
 - Clicking on the phone or its icon should open dialing.
 - Clicking on a location should open a page with google maps in a separate window with any location you choose.
 - The image of the dog, address and contacts are different blocks that should not overlap.
 - The background of the block can be made with a gradient.
+
 ## Cross-check evaluation criteria. Week 2
+
 The _Our pets_ page is created **+40**.
+
 1. The **Header** block is absent: **-10**.
+
 - There's no logo: **-2** The logo is present, but does not work as a link to the _Main page_: **-1**.
 - No navbar: **-5**. The navigation bar is present, but not interactive: **-1**. It is recommended to use `<nav>`.
 - The `About the shelter` element does not work as a link to the _Main page_: **-1**.
@@ -212,7 +224,9 @@ The _Our pets_ page is created **+40**.
 - The `Contacts` element does not work as an anchor link to the _Footer_ block of the same page: **-1**.
 - There is no `<h1>` element on the page: **-2**. There is an `<h1>` element, but there is more than one: **-1**.
 - The background significantly differs from what is on the designs (does not mean a shifted image or gradient): **-1**.
+
 2. The **Our Friends** block is absent: **-20**.
+
 - There're no pagination buttons: **-10**. There is a button, but:
   - Buttons are of the same color or background: **-2**.
   - The buttons are in the wrong order: **-2**.
@@ -226,11 +240,14 @@ The _Our pets_ page is created **+40**.
   - The structure of the cards is broken (for example, text or a button is located above the image): **-2**.
   - Cards are not interactive: **-2**.
   - `Learn more` buttons don't change color when hovering over the card: **-2**.
+
 3. The **Footer** block is absent: **-10**.
+
 - The grid structure of the elements is broken: **-2**.
 - The `email` element does not work as a link to a mail service: **-2**.
 - The `phone` element does not work as a call service link: **-2**.
 - At least one `location` element does not work as a link to google maps: **-1**.
 - There's no image of a dog: **-2**. There is a image of a dog, but it is significantly shifted, or overlapped on the text or other blocks: **-1**.
 - The background significantly differs from what is on the designs (does not mean a shifted image or gradient): **-1**.
+
 ---

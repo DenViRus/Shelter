@@ -1,0 +1,6 @@
+:root {
+  --footerBG: url(./../../img/pets-img/noise_transparent@2x.png), radial-gradient(110.67% 538.64% at 5.73% 50%, rgb(81, 61, 47) 0%, rgb(26, 26, 28) 100%), rgb(33, 31, 32);
+
+  --mainCardWidth: 22.5%;
+  --mainPaginWidth: 28.5%;
+}
