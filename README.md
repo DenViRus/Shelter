@@ -1,6 +1,7 @@
 # ![](./src/assets/pic/readme-pic/greenvir30.png) Shelter ![](./src/assets/pic/readme-pic/violetvir30.png)
 
 1. [Demo Week 1](https://DenViRus.github.io/Shelter/src/pages/main/main.html)
+1. [Demo Week 2](https://DenViRus.github.io/Shelter/src/pages/pets/pets.html)
 
 ---
 
@@ -9,7 +10,9 @@
 ## Stages of task completion
 
 **[Week 1](#week-1)**: Static markup of the `main` page.
+
 ## Layout
+
 - [Figma layout](https://www.figma.com/file/tKcmzkARtMUFQAR9VLdLkl/shelter-dom);
 
 ## Technical requirements
@@ -57,8 +60,6 @@ You can connect fonts by either downloading local files or connecting fonts via 
 The original width of the provided layout is 1280px. The width of the wrapper or guide columns is 1200px. The sizes of internal blocks are recommended to be set in relative values (%, vw) in order not to rewrite CSS styles for responsive layout.
 When the window width is above 1280px, the layout should remain centered, and not stretch to the full width of the window. To fill the free space, you can either stretch the backgrounds of the corresponding blocks to the entire width of the window, or use any of the colors present in the [designs](https://www.figma.com/file/tKcmzkARtMUFQAR9VLdLkl/shelter-dom):
 ![small-bg-example-1280](./src/assets/img/readme-img/header-week-1.jpg)
-
-#### Desktop version of the Main page (60 points)
 
 JPG: **[shelter. main-1280. JPG](./src/assets/img/readme-img/shelter-main-1280px.jpg)**
 
@@ -177,4 +178,76 @@ If during the check, you don't know whether to lower the score or not, then you 
 - At least one `location` element does not work as a link to google maps: **-1**.
 - There's no image of a dog: **-2**. There is a image of a dog, but it is significantly shifted, or overlapped on the text or other blocks: **-1**.
 - The background significantly differs from what is on the designs (does not mean a shifted image or gradient): **-1**.
+
+## Week 2
+
+JPG: **[shelter. Pets page. JPG](./src/assets/img/readme-img/shelter-pets-1280px.jpg)**
+
+1. **Header** (`<header>` contains only the logo and navigation bar)
+
+- Interactive navigation bar:
+  - `Our pets` element should be highlighted by default;
+  - highlighted `Our pets` element may not have hover effects.
+- Clicking on `About the shelter` takes us to the the _main page_
+- Clicking on `Help the shelter` redirects us to the _Help_ block located on the _main page_ (anchor link).
+- Clicking on `Contacts` takes us to the _Footer_ block located on the same page (anchor link).
+- The logo is located on the left. The logo consists of text elements (i.e. not a picture). Clicking on the logo takes us to the _main page_.
+- There must be one `<h1>` element on the page. You can make it with the text `Cozy House`.
+- There is no need to make the header "sticky". It means what when scrolling, it remains in its position.
+
+2. **Our Friends** block
+
+- Four-column layout.
+- Pet cards should be interactive when hovering over any area of the card. Hovering over a card changes the cursor, highlights the `Learn more` button, and changes the background.
+- It is not necessary to open a modal window when clicking at this stage.
+- Pagination should be clickable on available buttons. This means that from position (1) we cannot go further to the left, i.e. to the smaller side. Gray buttons must have the attribute `disabled`, `data-disabled` or a modifier class.
+
+3. **Footer** (`<footer>` contains contacts, address and image):
+
+- Clicking on an email or its icon should open the mail service.
+- Clicking on the phone or its icon should open dialing.
+- Clicking on a location should open a page with google maps in a separate window with any location you choose.
+- The image of the dog, address and contacts are different blocks that should not overlap.
+- The background of the block can be made with a gradient.
+
+## Cross-check evaluation criteria. Week 2
+
+The _Our pets_ page is created **+40**.
+
+1. The **Header** block is absent: **-10**.
+
+- There's no logo: **-2** The logo is present, but does not work as a link to the _Main page_: **-1**.
+- No navbar: **-5**. The navigation bar is present, but not interactive: **-1**. It is recommended to use `<nav>`.
+- The `About the shelter` element does not work as a link to the _Main page_: **-1**.
+- The `Our pets` element is not highlighted: **-1**.
+- The `Help the shelter` element does not work as an anchor link to the _Help_ block of the _Main page_: **-1**.
+- The `Contacts` element does not work as an anchor link to the _Footer_ block of the same page: **-1**.
+- There is no `<h1>` element on the page: **-2**. There is an `<h1>` element, but there is more than one: **-1**.
+- The background significantly differs from what is on the designs (does not mean a shifted image or gradient): **-1**.
+
+2. The **Our Friends** block is absent: **-20**.
+
+- There're no pagination buttons: **-10**. There is a button, but:
+  - Buttons are of the same color or background: **-2**.
+  - The buttons are in the wrong order: **-2**.
+  - Buttons "left" interactive: **-1**.
+  - Buttons "right" are not interactive: **-1**.
+  - There is no number on the page circle, or the number is different from one: **-1**.
+  - The page circle is interactive: **-1**.
+- There're no pet cards: **-10**. The pet cards are present, but at the same time:
+  - The grid structure of the elements is broken: **-2**.
+  - The number of cards does not match the designs: **-2**.
+  - The structure of the cards is broken (for example, text or a button is located above the image): **-2**.
+  - Cards are not interactive: **-2**.
+  - `Learn more` buttons don't change color when hovering over the card: **-2**.
+
+3. The **Footer** block is absent: **-10**.
+
+- The grid structure of the elements is broken: **-2**.
+- The `email` element does not work as a link to a mail service: **-2**.
+- The `phone` element does not work as a call service link: **-2**.
+- At least one `location` element does not work as a link to google maps: **-1**.
+- There's no image of a dog: **-2**. There is a image of a dog, but it is significantly shifted, or overlapped on the text or other blocks: **-1**.
+- The background significantly differs from what is on the designs (does not mean a shifted image or gradient): **-1**.
+
 ---

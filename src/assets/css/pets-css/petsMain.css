@@ -1,0 +1,136 @@
+.main {
+  background-color: var(--colorLightl);
+  padding-top: 8rem;
+  padding-bottom: 10rem;
+}
+
+.main-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-heading {
+  text-align: center;
+  width: 33.5%;
+  margin-left: 2rem;
+}
+
+.main-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5.9rem;
+  margin-left: 1.7rem;
+}
+
+.main-card-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 2.7rem;
+}
+
+.main-card {
+  width: var(--mainCardWidth);
+  background-color: var(--colorLightS);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 3rem;
+  border-radius: 1rem;
+}
+
+.main-card-img-box {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.main-card-heading {
+  margin-top: 3rem;
+}
+
+.main-card-link {
+  border: 0.3rem solid var(--colorPrime);
+  padding: 1.5rem 4.5rem;
+  border-radius: 10rem;
+  margin-top: 2.7rem;
+}
+
+.main-card:hover {
+  background-color: var(--colorWhite);
+  scale: 103%;
+  box-shadow: var(--hoverShadow);
+  cursor: pointer;
+}
+
+.main-card:hover .main-card-heading {
+  color: var(--colorBlack);
+}
+
+.main-card:hover .main-card-link {
+  color: var(--colorBlack);
+  background-color: var(--colorPrime);
+}
+
+.main-card-link:hover {
+  scale: 103%;
+  box-shadow: var(--hoverShadow);
+}
+
+.main-card-link:active {
+  color: var(--colorDark3xl);
+  background-color: var(--colorPrime);
+  scale: 100%;
+}
+
+
+.main-pagination-box {
+  margin-top: 5.5rem;
+  width: var(--mainPaginWidth);
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-pagination-button {
+  font-family: var(--headStyle);
+  font-size: var(--cardHeadFZ);
+  line-height: var(--cardHeadLH);
+  letter-spacing: var(--headLS);
+  color: var(--colorDark3xl);
+  border: 0.3rem solid var(--colorPrime);
+  width: 5.3rem;
+  height: 5.3rem;
+  border-radius: 10rem;
+}
+
+.main-pagination-number {
+  text-align: center;
+  font-family: var(--headStyle);
+  font-size: var(--cardHeadFZ);
+  letter-spacing: var(--headLS);
+  color: var(--colorDark3xl);
+  background-color: var(--colorPrime);
+  width: 5.3rem;
+  height: 5.3rem;
+  line-height: 5.3rem;
+  border-radius: 10rem;
+}
+
+.main-pagination-button:hover {
+  scale: 120%;
+  background-color: var(--colorPrime);
+  color: var(--colorBlack);
+  box-shadow: var(--hoverShadow);
+}
+
+.main-pagination-button:disabled {
+  color: var(--colorDarkS);
+  border-color: var(--colorDarkS);
+  background-color: var(--colorLightl);
+  scale: 100%;
+  box-shadow: none;
+}

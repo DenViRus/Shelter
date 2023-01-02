@@ -1,0 +1,103 @@
+.footer {
+  height: var(--footerHeight);
+  background: var(--footerBG);
+  display: flex;
+  /* background-image: url(./../../img/pets-img/footer-gradient-background.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat; */
+}
+
+.footer-row {
+  display: flex;
+}
+
+.section-contacts,
+.section-location {
+  margin-top: 5.8rem;
+  margin-left: 0.9rem;
+}
+
+.section-contacts {
+  width: var(--contactsWidth);
+}
+
+.section-location {
+  width: var(--locationWidth);
+  margin-left: 15.6rem;
+}
+
+.contacts-heading,
+.location-heading{
+  color: var(--colorLightxl);
+}
+
+.mail-link,
+.phone-link,
+.boston-link,
+.london-link {
+  display: flex;
+  align-items: center;
+}
+
+.mail-link,
+.phone-link {
+  margin-top: 3.8rem;
+}
+
+.boston-link,
+.london-link {
+  margin-top: 3.2rem;
+}
+
+.mail-link-svg-box,
+.phone-link-svg-box {
+  width: 4rem;
+}
+
+.boston-link-svg-box,
+.london-link-svg-box {
+  width: 2.2rem;
+}
+
+.mail-link-text,
+.phone-link-text,
+.boston-link-text,
+.london-link-text {
+  color: var(--colorPrime);
+  margin-left: 2rem;
+}
+
+.boston-link-text {
+ width: calc(100% - 5rem);
+}
+
+.mail-link:hover,
+.phone-link:hover,
+.boston-link:hover,
+.london-link:hover {
+  box-shadow: var(--hoverShadow);
+  scale: 103%;
+}
+
+.mail-link:hover .mail-link-text,
+.phone-link:hover .phone-link-text,
+.boston-link:hover .boston-link-text,
+.london-link:hover .london-link-text {
+  color: var(--colorPrimeLight);
+}
+
+.mail-link:hover .mail-link-svg,
+.phone-link:hover .phone-link-svg,
+.boston-link:hover .boston-link-svg,
+.london-link:hover .london-link-svg {
+  fill: var(--colorPrimeLight);
+}
+
+
+.footer-img-box {
+  width: var(--footerImgWidth);
+  align-self: flex-end;
+  margin-left: auto;
+  margin-right: -.8rem;
+}
