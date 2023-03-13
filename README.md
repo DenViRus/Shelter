@@ -1,7 +1,6 @@
 # ![](./src/assets/pic/readme-pic/greenvir30.png) Shelter ![](./src/assets/pic/readme-pic/violetvir30.png)
 
-1. [Demo Week 1](https://DenViRus.github.io/Shelter/src/pages/main/main.html)
-1. [Demo Week 2](https://DenViRus.github.io/Shelter/src/pages/pets/pets.html)
+1. [Demo Week 3](https://DenViRus.github.io/Shelter/src/pages/main/main.html)
 
 ---
 
@@ -110,75 +109,6 @@ JPG: **[shelter. main-1280. JPG](./src/assets/img/readme-img/shelter-main-1280px
 - The image of the dog, address and contacts are different blocks that should not overlap.
 - The background of the block can be made with a gradient.
 
-## Cross-check evaluation criteria. Week 1
-
-Open the application at 1280px screen width. If the screen is smaller, you can zoom in, or you can set the page width to 1280px and observe with the visible horizontal scrollbar. If the screen is wider, you can make the area narrower or narrow the window. If the vertical scroll is present, in some cases the width may not match the one that displays the value in the dev tools (the offset can be up to 17px). When checking, keep this in mind and make sure that the width is set correctly.
-The task is checked exclusively according to the criteria specified below. If you see some kind of defect or mistake in the work that does not match a criterion, the score should not be decreased. But you can highlight it in the comments.
-If during the check, you don't know whether to lower the score or not, then you shouldn't. For example, if wrong numbers are entered in the **You can also make a donation** block inside the button, then this will not be considered a mistake, the score shouldn't be reduced.
-❗ The score cannot go below **0** per page. Unless otherwise stated in the requirements, all non-repeating blocks or elements without `hover` should meet the following criteria:
-
-- Indents from the borders of elements (or sets of elements) to the edges of the block, horizontally or vertically, differ by more than 20px: **-1** for each block.
-- Margins within a set or grid between elements, horizontally or vertically, differ by more than 10px: **-1** per block.
-- The background color of the block or element differs from the design (does not apply to the position of the gradient or stretched image): **-1** for each block.
-- Missing element or picture, both background and element picture: **-1** for each block.
-- font-family is not included, or difference in font size is more than 4px: **-1** per block.
-  The _Main page_ is created **+60**.
-
-1. The **Header** block is absent: **-10**.
-
-- There's no logo: **-2**.
-- No navbar: **-5**. The navigation bar is present, but not interactive: **-1**. It is recommended to use `<nav>`.
-- The `About the shelter` element is not highlighted: **-1**.
-- The `Our pets` element does not work as a link to the _our pets_: **-1** page.
-- The `Help the shelter` element does not work as an anchor link to the _Help_ block: **-1**.
-- The `Contacts` element does not work as an anchor link to the _Footer_ block: **-1**.
-- There is no `<h1>` element on the page: **-2**. There is an `<h1>` element, but there is more than one: **-1**.
-- The background significantly differs from what is on the designs (does not mean a shifted image or gradient): **-1**.
-
-2. The **Not only** block is absent: **-5**.
-
-- The `Make a Friend` is absent: **-2**. The button is present, but not interactive, or does not work as an anchor link to the _Our Friends_: **-1** block.
-- The background significantly differs from what is on the designs (does not mean a shifted image or gradient): **-1**.
-- There's no image of a dog: **-2**. There is a image of a dog, but it is significantly shifted, or overlapped on the text or other blocks: **-1**.
-
-3. The **About** block is absent: **-5**.
-
-- There's no image of a cat and a dog: **-2**. There is a image of a dog, but it is significantly shifted, or overlapped on the text or other blocks: **-1**.
-- Header text has incorrect dimensions: **-2**.
-- The quotation marks are not in the correct form: **-1**.
-
-4. The **Our Friends** block is absent: **-20**.
-
-- There's no "left" button: **-2**. The button is present, but it is not interactive: **-1**.
-- There's no "right" button: **-2**. The button is present, but it is not interactive: **-1**.
-- There're no pet cards: **-10**. The pet cards are present, but at the same time:
-  - The grid structure of the elements is broken: **-2**.
-  - The number of cards does not match the designs: **-2**.
-  - The structure of the cards is broken (for example, text or a button is located above the image): **-2**.
-  - Cards are not interactive: **-2**.
-  - `Learn more` buttons don't change color when hovering over the card: **-2**.
-- There's no `Get to know the rest` button: **-2**. The button is present, but not interactive, or doesn't work as a link to the _our pets_ page: **-1**.
-
-5. The **Help** block is absent: **-5**.
-
-- The grid structure of the elements is broken (not 5 elements from above, 4 from below): **-2**.
-- Image of one or more icons missing: **-2**.
-- The structure is broken (e.g. text above or icon below) in one or more elements: **-1**.
-
-6. The **In addition** block is absent: **-5**.
-
-- There's no bank account button: **-2**. The button is present, but not interactive, or is not a link: **-1**.
-- There's no image of a dog: **-2**. There is a image of a dog, but it is significantly shifted, or overlapped on the text or other blocks: **-1**.
-
-7. The **Footer** block is absent: **-10**.
-
-- The grid structure of the elements is broken: **-2**.
-- The `email` element does not work as a link to a mail service: **-2**.
-- The `phone` element does not work as a call service link: **-2**.
-- At least one `location` element does not work as a link to google maps: **-1**.
-- There's no image of a dog: **-2**. There is a image of a dog, but it is significantly shifted, or overlapped on the text or other blocks: **-1**.
-- The background significantly differs from what is on the designs (does not mean a shifted image or gradient): **-1**.
-
 ## Week 2
 
 JPG: **[shelter. Pets page. JPG](./src/assets/img/readme-img/shelter-pets-1280px.jpg)**
@@ -210,44 +140,160 @@ JPG: **[shelter. Pets page. JPG](./src/assets/img/readme-img/shelter-pets-1280px
 - The image of the dog, address and contacts are different blocks that should not overlap.
 - The background of the block can be made with a gradient.
 
-## Cross-check evaluation criteria. Week 2
+## Week 3
 
-The _Our pets_ page is created **+40**.
+- **[Repository requirements](#repository-requirements)**
+- **[First paragraph in a section: Cross-check evaluation criteria. Week 1](#cross-check-evaluation-criteria-week-1)**
 
-1. The **Header** block is absent: **-10**.
+### Task verification features
 
-- There's no logo: **-2** The logo is present, but does not work as a link to the _Main page_: **-1**.
-- No navbar: **-5**. The navigation bar is present, but not interactive: **-1**. It is recommended to use `<nav>`.
-- The `About the shelter` element does not work as a link to the _Main page_: **-1**.
-- The `Our pets` element is not highlighted: **-1**.
-- The `Help the shelter` element does not work as an anchor link to the _Help_ block of the _Main page_: **-1**.
-- The `Contacts` element does not work as an anchor link to the _Footer_ block of the same page: **-1**.
-- There is no `<h1>` element on the page: **-2**. There is an `<h1>` element, but there is more than one: **-1**.
-- The background significantly differs from what is on the designs (does not mean a shifted image or gradient): **-1**.
+The task will be evaluated by resizing the Google Chrome browser window, or by connecting device emulation through the developer panel (DevTools -> Toggle Device Toolbar). Evaluation the project on real mobile devices or tablets is **not required**.
+❗ Make sure you don't have a vertical scroll bar when you check, because it takes part of the responsive layout space with its width. To disable it, you must select the `Responsive` emulation mode, as well as set the device type to `Mobile`. If the device type is not displayed, in the top bar of the `device toolbar`, click on the three dots on the right and select `Add device type`.
 
-2. The **Our Friends** block is absent: **-20**.
+![responsive](./src/assets/img/readme-img/shelter-responsive.png)
 
-- There're no pagination buttons: **-10**. There is a button, but:
-  - Buttons are of the same color or background: **-2**.
-  - The buttons are in the wrong order: **-2**.
-  - Buttons "left" interactive: **-1**.
-  - Buttons "right" are not interactive: **-1**.
-  - There is no number on the page circle, or the number is different from one: **-1**.
-  - The page circle is interactive: **-1**.
-- There're no pet cards: **-10**. The pet cards are present, but at the same time:
-  - The grid structure of the elements is broken: **-2**.
-  - The number of cards does not match the designs: **-2**.
-  - The structure of the cards is broken (for example, text or a button is located above the image): **-2**.
-  - Cards are not interactive: **-2**.
-  - `Learn more` buttons don't change color when hovering over the card: **-2**.
+**"responsive"** are sizes given in relative values from the width of the window or parent block, which smoothly change their values when the browser window is reduced or enlarged. The main thing is that when imposing a picture, for example, at 768px on a layout with a width of 768px, the sizes or indents should match.
+❗ The page should not fall apart, which means that padding, block sizes, and so on, should not go beyond the right edge of the screen and there should not be a horizontal scroll, up to a threshold value (less than 320px).
 
-3. The **Footer** block is absent: **-10**.
+## 1280px <= width
 
-- The grid structure of the elements is broken: **-2**.
-- The `email` element does not work as a link to a mail service: **-2**.
-- The `phone` element does not work as a call service link: **-2**.
-- At least one `location` element does not work as a link to google maps: **-1**.
-- There's no image of a dog: **-2**. There is a image of a dog, but it is significantly shifted, or overlapped on the text or other blocks: **-1**.
-- The background significantly differs from what is on the designs (does not mean a shifted image or gradient): **-1**.
+The layout requirements of [week 1](#week-1) of the project are met: either the blocks continue their color to the entire available area of the window, and the wrapper itself (1200px) is centered (the gradient can also change the width), or the layout takes a maximum width of 1280px and centered with equal indents on the right and left, white or any other color from the layout (when checking, if it will be difficult to see the integrity on a large screen, you can set the body element's background-color property of any contrasting color in the developer panel).
+
+## 768px <= width < 1280px
+
+### Main Page
+
+1. **Header** (`<header>` contains only the logo and navigation bar)
+
+- The logo is nailed closer to the top of the page.
+- Padding to the left of the logo and to the right of the navigation menu must be hardcoded, as in the `768px` layout.
+- There is no need to make the header "sticky". It means that when scrolling, it remains in its position.
+
+2. **Not only** section
+
+- The title with the text "Not only people need a house" should be positioned as indicated on the layout, i.e. the line wrapping must match the layout. To do so, you can make an additional wrapper, which is centered relative to the main blocks. Only indentation can be `responsive`, but the indentation on the left must match the indentation of the next block of text.
+- The block with the text "We offer to give..." should be centered with equal margins on the edges. Block with text and padding can be `responsive`.
+- The "Make a Friend" button should be centered and rigidly sized like the `768px` layout.
+- The dog picture can be `responsive`, but the offset to the right must remain proportional, i.e. padding to the right margin can also be `responsive`.
+
+3. **About** section
+
+- The title with the text "About the shelter..." should be positioned as indicated on the layout, i.e. the line wrapping must match the layout. To do so, you can make an additional wrapper, which is centered relative to the main blocks. Only indentation can be `responsive`, but the indentation on the left must match the indentation of the next block of text.
+- Blocks with the text "Currently..." and "We feed our..." should be centered with equal margins on the edges. Block with text and padding can be `responsive`.
+- A picture of a cat and a dog, its indents can be `responsive`. The main thing is that the picture is centered.
+
+4. **Our Friends** section
+
+- The header block must be centered. Block with text and padding can be `responsive`.
+- Instead of three blocks with pets, there should now be two. Pet blocks are rigidly sized, as in the `assets` layout. In this case, the indents between blocks, slider arrows or screen edges can be `responsive`.
+- The "Get to know the rest" button should be centered and rigidly sized like the `768px` layout.
+
+5. **Help** section
+
+- The header block must be centered. Block with text and padding can be `responsive`.
+- Elements are arranged in a 3 x 3 grid. Either the grid increases in proportion to the size of the screen or the indents between the elements and the edges of the screen can be `responsive`. The grid structure should not change.
+
+6. **In addition** section
+
+- The block with the text "You can..." must be positioned as indicated on the layout, i.e. line wrapping must match the layout. To do so, you can make an additional wrapper, which is centered relative to the main blocks. Only indentation can be `responsive`, but the indentation on the left must match the indentation of the next block of text.
+- The block with the "Name of the bank..." text should be located as indicated on the layout. To do so, you can make an additional wrapper, which is centered relative to the main blocks. Only padding can be `responsive`, but the left padding must match the next button padding.
+- The button with the bank account number should be located as indicated on the layout and have a fixed size, as on the `768px` layout. To do so, you can make an additional wrapper, which is centered relative to the main blocks. Only indentation can be `responsive`, but the indentation on the left must match the indentation of the next block of text.
+- The block with the "Legal information..." text should be centered with equal margins on the edges. Block with text and padding can be `responsive`.
+- Dog picture and padding can be `responsive`. The main thing is that the picture is centered.
+
+7. **Footer** (`<footer>` contains contacts, address and image):
+
+- There is a grid of two columns. Please note that the grid block itself must be centered, i.e. the distance to the left of the first column is the same as the distance to the right of the second column. In this case, the columns themselves and indents can be `responsive`.
+- Dog picture and padding can be `responsive`. The main thing is that the picture is centered.
+
+### Pets Page
+
+1. **Header** (`<header>` содержит только логотип и панель навигации)
+1. **Header** (`<header>` contains only the logo and navigation bar)
+
+- The logo is nailed closer to the top of the page.
+- Padding to the left of the logo and to the right of the navigation menu must be hardcoded, as in the `768px` layout.
+- There is no need to make the header "sticky". It means that when scrolling, it remains in its position.
+
+2. **Our Friends** section
+
+- Heading text should be centered. Block with text and padding can be `responsive`.
+- Grid becomes 2 x 3. Pet blocks are rigidly sized like in the `assets` layout. In this case, the indents between blocks or screen edges can be `responsive`.
+- Block with buttons should be centered. Button sizes and spacings are hardcoded, like on `assets`, or like on the `768px` layout. Padding to the edges of the screen can be `responsive`.
+
+3. **Footer** (`<footer>` contains contacts, address and image):
+
+- There is a grid of two columns. Please note that the grid box itself must be centered, i.e. the distance to the left of the first column is the same as the distance to the right of the second column. In this case, the columns themselves and indents can be `responsive`.
+- Dog picture and padding can be `responsive`. The main thing is that the picture is centered.
+
+## 320px <= width < 768px
+
+### Main Page
+
+1. **Header** (`<header>` only contains logo and burger menu)
+
+- The navigation menu is transformed into the burger menu, which will open on click and offer the familiar navigation bar. The logo is duplicated in the open menu, although it's not visible on the layout. However, if you implemented it so that the menu opens and the logo disappears from the main page - it's not a mistake, and the score will not be reduced.
+- The indent to the left of the logo can be `responsive`. The padding to the right of the navigation menu should be hardcoded, as in the `320px` layout.
+- There is no need to make the header "sticky". It means that when scrolling, it remains in its position.
+
+2. **Not only** section
+
+- The title with the "Not only people need a house" text should be centered with equal margins around the edges. Block with text and padding can be `responsive`.
+- The block with the "We offer to give..." text should be centered with equal margins on the edges. Block with text and padding can be `responsive`.
+- The "Make a Friend" button should be centered and rigidly sized like the `320px` layout.
+- The dog picture can be `responsive`, but the offset to the right must remain proportional, i.e. padding to the right margin can also be `responsive`.
+
+3. **About** section
+
+- The title with the "About the shelter..." text should be centered with equal margins around the edges. Block with text and padding can be `responsive`.
+- Blocks with the "Currently..." text and "We feed our..." should be centered with equal margins on the edges. Block with text and padding can be `responsive`.
+- Cat and dog picture and padding can be `responsive`. The main thing is that the picture is centered.
+
+4. **Our Friends** section
+
+- The block header must be centered. Block with text and padding can be `responsive`.
+- Instead of two blocks with pets, there should be one for now. The pet block has rigid dimensions, as in the `assets` layout. In this case, the padding between slider arrows or screen edges can be `responsive`.
+- The "Get to know the rest" button should be centered and rigidly sized like the `320px` layout.
+
+5. **Help** section
+
+- The block header must be centered. Block with text and padding can be `responsive`.
+- Elements are arranged in a grid, 2 x 5. Either the grid increases in proportion to the size of the screen, or the indents between the elements and the edges of the screen can be made `responsive`. The grid structure should not change. The last ninth element of the grid should be in the grid on the left.
+
+6. **In addition** section
+
+- Block with the "You can..." text should be centered. Block with text and padding can be `responsive`.
+- The block with the "Name of the bank..." text should be centered. Block with text and padding can be `responsive`.
+- The button with the bank account number must be centered. The button itself, as well as padding to the edges of the screen, can be `responsive`.
+- The block with the text "Legal information..." should be centered with equal margins on the edges. Block with text and padding can be `responsive`.
+- Dog picture and padding can be `responsive`. The main thing is that the picture is centered.
+
+7. **Footer** (`<footer>` contains text, logo and navigation bar):
+
+- One single column. The indents of all elements to the edges of the screen must match. The column itself must be centered. At the same time, both the column itself and the indents to the edges of the screen can be `responsive`.
+- Dog picture and padding can be `responsive`. The main thing is that the picture is centered.
+
+### Pets Page
+
+1. **Header** (`<header>` only contains logo and burger menu)
+
+- The navigation menu is transformed into the burger menu, which will open on click and offer the familiar navigation bar. The logo is duplicated in the open menu, although this is not visible on the layout. However, if you made the menu open and the logo disappears from the main page - this is not a mistake, the points will not be reduced.
+- The indent to the left of the logo can be `responsive`. The padding to the right of the navigation menu must be hardcoded, as in the `320px` layout.
+- There is no need to make the header "sticky". It means that when scrolling, it remains in its position.
+
+2. **Our Friends** section
+
+- The block header must be centered. Block with text and padding can be `responsive`.
+- Grid becomes 1 x 3. Pet blocks are rigidly sized like in the `assets` layout. In this case, the indents between blocks or screen edges can be `responsive`.
+- Block with buttons should be centered. Button sizes and spacings are hardcoded, like on `assets`, or like on the `320px` layout. Padding to the edges of the screen can be `responsive`.
+
+3. **Footer** (`<footer>` contains contacts, address and image):
+
+- One single column. The indents of all elements to the edges of the screen must match. The column itself must be centered. At the same time, both the column itself and the indents to the edges of the screen can be `responsive`.
+- Dog picture and padding can be `responsive`. The main thing is that the picture is centered.
+
+## width < 320px
+
+Minimum layout width = 320px. After the threshold value, the location of the layout does not matter. The layout structure remains the same with a width of 320px. If at some moment during screen resolution reduction the layout "breaks" it's not a mistake.
 
 ---
