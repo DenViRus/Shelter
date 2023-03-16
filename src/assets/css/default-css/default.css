@@ -2,7 +2,6 @@
 @import "./reset.css";
 @import "./fonts.css";
 
-
 html {
   font-size: 10px;
 }
@@ -34,19 +33,23 @@ html {
   --colorDark3xl: rgb(41, 41, 41);
   --colorPrime: rgb(241, 205, 179);
   --colorPrimeLight: rgb(253, 220, 196);
-  --hoverShadow: 0rem .2rem 3.5rem 1.4rem rgba(13, 13, 13, 0.04);
+  --hoverShadow: 0rem 0.2rem 3.5rem 1.4rem rgba(13, 13, 13, 0.04);
+
+  --mainRowWidth: 1200px;
+
+  --headerLogoWidth: 15.5%;
+  --headerNavWidth: 37%;
 
   --logoHeadFZ: 3.2rem;
   --logoHeadLH: 1.1em;
-
   --logoParagFZ: 1.3rem;
   --logoParagLH: 1.15em;
-  --logoParagLS: .1em;
+  --logoParagLS: 0.1em;
 
   --sectHeadFZ: 3.5rem;
 
   --headLH: 1.3em;
-  --headLS: .06em;
+  --headLS: 0.06em;
 
   --paragFZ: 1.5rem;
   --paragLH: 1.6em;
@@ -57,13 +60,9 @@ html {
   --cardHeadLH: 1.15em;
 
   --footerHeight: 35rem;
-  --mainRowWidth: 1200px;
-
-  --headerLogoWidth: 15.5%;
-  --headerNavWidth: 37%;
-
-  --contactsWidth: 23.5%;
-  --locationWidth: 25.5%;
+  --footerInfBoxWidth: 65%;
+  --contactsWidth: 36%;
+  --locationWidth: 40%;
   --footerImgWidth: 25%;
 }
 
@@ -106,4 +105,28 @@ html {
   line-height: var(--cardHeadLH);
   letter-spacing: var(--headLS);
   color: var(--colorDarkl);
+}
+
+/* @media start */
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  :root {
+    --maxMainRowWidth: 1200px;
+    --minMainRowWidth: 748px;
+
+    --headerLogoWidth: 19rem;
+    --headerNavWidth: 44.3rem;
+
+    --footerHeight: 64rem;
+    --footerInfBoxWidth: 71rem;
+    --contactsWidth: 28rem;
+    --locationWidth: 30.5rem;
+    --footerImgWidth: 30rem;
+  }
+
+  .row {
+    max-width: var(--maxMainRowWidth);
+    min-width: var(--minMainRowWidth);
+    width: calc(100% - 2rem);
+  }
 }

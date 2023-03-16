@@ -103,3 +103,37 @@ margin-right: .3rem;
   border-radius: 10rem;
 }
 /* nav finish */
+
+
+/* @media start */
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .header {
+    margin-top: 3rem;
+  }
+
+  .header-logo-box {
+    margin-left: 2.9rem;
+  }
+
+  .header-nav-box {
+    margin-right: 1.2rem;
+  }
+
+  .header-nav-list {
+    justify-content: space-between;
+  }
+
+  .header-nav-item:first-child {
+    margin-right: 0;
+  }
+
+  .header-nav-item:nth-child(2){
+    margin-right: 0;
+  }
+
+  .header-nav-item:last-child {
+  margin-left: 0;
+  margin-right: 0;
+  }
+}

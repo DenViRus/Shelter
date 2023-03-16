@@ -28,3 +28,26 @@
 .aboutShelter-paragraph {
   margin-top: 2.5rem;
 }
+
+/* @media start */
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .section-aboutShelter {
+    padding-top: 6.6rem;
+    padding-bottom: 10rem;
+  }
+
+  .aboutShelter-row {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .aboutShelter-img-box {
+    margin-left: 1.5rem;
+    margin-top: 7.8rem;
+  }
+
+  .aboutShelter-content-box {
+    margin-left: 1.8rem;
+  }
+}
