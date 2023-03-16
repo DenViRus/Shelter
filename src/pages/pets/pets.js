@@ -1,1 +1,1 @@
-import './../../assets/js/pets-js/petsApp.js';
+import "./../../assets/js/pets-js/petsApp.js";

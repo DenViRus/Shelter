@@ -31,8 +31,8 @@
 
 .donation-link {
   background-color: var(--colorPrime);
+  width: var(--donationLinkWidth);
   display: flex;
-  width: 91.5%;
   padding: 1rem 1.5rem;
   border-radius: 1rem;
   margin-top: 1.8rem;
@@ -75,4 +75,25 @@
   font-size: 12px;
   line-height: 18px;
   margin-top: 1.8rem;
+}
+
+/* @media start */
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .section-donation {
+    padding-top: 8.1rem;
+  }
+
+  .donation-row {
+    flex-direction: column-reverse;
+  }
+
+  .donation-content-box {
+    margin-left: 1.7rem;
+  }
+
+  .donation-img-box {
+    margin-left: 1.5rem;
+    margin-top: 6rem;
+  }
 }
