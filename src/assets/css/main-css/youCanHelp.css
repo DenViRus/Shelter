@@ -71,11 +71,40 @@
   }
 
   .youCanHelp-heading {
-    margin-left: 1.8;
+    margin-left: 1.8rem;
   }
 
   .youCanHelp-list {
     column-gap: 6rem;
-    margin-left: 1.8;
+    margin-left: 1.8rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .section-youCanHelp {
+    padding-top: 4.3rem;
+    padding-bottom: 4.4rem;
+  }
+
+  .youCanHelp-heading {
+    margin-left: 1.8rem;
+  }
+
+  .youCanHelp-list {
+    column-gap: 3rem;
+    row-gap: 2.9rem;
+    margin-top: 4.1rem;
+    margin-left: 1.7rem;
+    justify-content: space-between;
+  }
+
+  .youCanHelp-card-svg-box {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .youCanHelp-card-heading {
+    --cardHeadFZ: 1.5rem;
+    margin-top: 2rem;
   }
 }

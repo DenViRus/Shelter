@@ -155,3 +155,43 @@
     margin-left: 1.8;
   }
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .section-ourFriends {
+    padding-top: 4.3rem;
+    padding-bottom: 4.1rem;
+  }
+
+  .ourFriends-heading {
+    margin-left: 1.8rem;
+  }
+
+  .ourFriends-slider-box {
+    margin-top: 4rem;
+    margin-left: 1.8rem;
+    justify-content: center;
+    position: relative;
+  }
+
+  .ourFriends-slider-card:nth-child(n + 2) {
+    display: none;
+  }
+
+  .ourFriends-slider-button {
+    position: absolute;
+    bottom: -7rem;
+  }
+
+  .ourFriends-prev-button {
+    left: 5.5rem;
+  }
+
+  .ourFriends-next-button {
+    right: 5.5rem;
+  }
+
+  .ourFriends-link {
+    margin-top: 11.2rem;
+    margin-left: 1.8rem;
+  }
+}

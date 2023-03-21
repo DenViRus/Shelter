@@ -2,20 +2,19 @@
   --startScrBG: url(./../../img/main-img/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, rgb(91, 72, 58) 0%, rgb(38, 36, 37) 100%), rgb(33, 31, 32);
   --footerBG: url(./../../img/main-img/noise_transparent@2x.png), radial-gradient(110.67% 538.64% at 5.73% 50%, rgb(81, 61, 47) 0%, rgb(26, 26, 28) 100%), rgb(33, 31, 32);
 
-  --notOnlyHeadFZ: 4.4rem;
-
-  --donationParagFZ: 1.2rem;
-  --donationParagLH: 1.5em;
-
   --startSreenHeight: 91rem;
 
   --notOnlyContWidth: 39%;
   --notOnlyHeadWidth: 66%;
+  --notOnlyParagWidth: 100%;
+  --notOnlyHeadFZ: 4.4rem;
   --notOnlyLinkWidth: 45%;
   --notOnlyImgWidth: 59%;
 
   --aboutShelterImgWidth: 25%;
   --aboutShelterContWidth: 35.5%;
+  --aboutShelterHeadWidth: 86.5%;
+  --aboutShelterParagWidth: 100%;
 
   --ourFriendsHeadWidth: 33.5%;
   --ourFriendsSlidBoxWidth: 100%;
@@ -28,7 +27,18 @@
 
   --donationImgWidth: 42.5%;
   --donationContWidth: 32%;
+  --donationHeadWidth: 78.5%;
+  --donationSubHeadWidth: 100%;
   --donationLinkWidth: 91.5%;
+  --donationParagWidth: 100%;
+
+  --donationParagFZ: 1.2rem;
+  --donationParagLH: 1.5em;
+}
+
+.main-box {
+  overflow: hidden;
+  position: relative;
 }
 
 .startSreen {
@@ -57,7 +67,7 @@
   :root {
     --startSreenHeight: 116.5rem;
 
-    --notOnlyContWidth: 46em;
+    --notOnlyContWidth: 46rem;
     --notOnlyHeadWidth: 67%;
     --notOnlyLinkWidth: 46%;
     --notOnlyImgWidth: 57rem;
@@ -77,5 +87,42 @@
     --donationContWidth: 38rem;
     --donationLinkWidth: 35rem;
     --donationImgWidth: 50.5rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  :root {
+    --startSreenHeight: 82.3rem;
+
+    --notOnlyContWidth: 30rem;
+    --notOnlyHeadFZ: 2.5rem;
+    --notOnlyHeadWidth: 67%;
+    --notOnlyLinkWidth: 70%;
+    --notOnlyImgWidth: 26rem;
+
+    --aboutShelterImgWidth: 26rem;
+    --aboutShelterContWidth: 30rem;
+    --aboutShelterHeadWidth: 22rem;
+    --aboutShelterParagWidth: 27rem;
+
+    --ourFriendsHeadWidth: 30rem;
+    --ourFriendsSlidBoxWidth: 30rem;
+    --ourFriendsSlidWidth: 27rem;
+    --ourFriendsCardWidth: 27rem;
+
+    --youCanHelpHeadWidth: 22.5rem;
+    --youCanHelpListWidth: 29rem;
+    --youCanHelpCardWidth: 13rem;
+
+    --donationContWidth: 30rem;
+    --donationHeadWidth: 21rem;
+    --donationSubHeadWidth: 27.3rem;
+    --donationLinkWidth: 28rem;
+    --donationParagWidth: 28rem;
+    --donationImgWidth: 26rem;
+  }
+
+  .startSreen {
+    justify-content: flex-start;
   }
 }
