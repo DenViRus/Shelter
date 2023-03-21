@@ -38,7 +38,9 @@ html {
   --mainRowWidth: 1200px;
 
   --headerLogoWidth: 15.5%;
+
   --headerNavWidth: 37%;
+  --headerNavLogoWidth: 19rem;
 
   --logoHeadFZ: 3.2rem;
   --logoHeadLH: 1.1em;
@@ -46,8 +48,12 @@ html {
   --logoParagLH: 1.15em;
   --logoParagLS: 0.1em;
 
-  --sectHeadFZ: 3.5rem;
+  --headerNavBtnTime: 0.2s;
+  --headerNavBtnWidth: 3rem;
+  --headerNavBtnHeight: 2.2rem;
+  --headerNavBtnItemHeight: 0.3rem;
 
+  --sectHeadFZ: 3.5rem;
   --headLH: 1.3em;
   --headLS: 0.06em;
 
@@ -62,7 +68,11 @@ html {
   --footerHeight: 35rem;
   --footerInfBoxWidth: 65%;
   --contactsWidth: 36%;
+  --contactsHeadWidth: 100%;
+
   --locationWidth: 40%;
+  --locationHeadWidth: 100%;
+
   --footerImgWidth: 25%;
 }
 
@@ -122,6 +132,33 @@ html {
     --contactsWidth: 28rem;
     --locationWidth: 30.5rem;
     --footerImgWidth: 30rem;
+  }
+
+  .row {
+    max-width: var(--maxMainRowWidth);
+    min-width: var(--minMainRowWidth);
+    width: calc(100% - 2rem);
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  :root {
+    --maxMainRowWidth: 747px;
+    --minMainRowWidth: 300px;
+
+    --headerLogoWidth: 19rem;
+
+    --headerNavWidth: 32rem;
+
+    --sectHeadFZ: 2.5rem;
+
+    --footerHeight: 81rem;
+    --footerInfBoxWidth: 30rem;
+    --contactsWidth: 28rem;
+    --locationWidth: 30rem;
+    --contactsHeadWidth: 23rem;
+    --locationHeadWidth: 27rem;
+    --footerImgWidth: 26rem;
   }
 
   .row {

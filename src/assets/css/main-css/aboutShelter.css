@@ -21,11 +21,12 @@
 
 .aboutShelter-heading {
   color: var(--colorDarkxl);
-  width: 86.5%;
+  width: var(--aboutShelterHeadWidth);
   margin-top: 1.4rem;
 }
 
 .aboutShelter-paragraph {
+  width: var(--aboutShelterParagWidth);
   margin-top: 2.5rem;
 }
 
@@ -49,5 +50,37 @@
 
   .aboutShelter-content-box {
     margin-left: 1.8rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .section-aboutShelter {
+    padding-top: 2.8rem;
+    padding-bottom: 4.3rem;
+  }
+  .aboutShelter-row {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .aboutShelter-img-box {
+    margin-left: 1.5rem;
+    margin-top: 4rem;
+  }
+
+  .aboutShelter-content-box {
+    margin-left: 0;
+    align-items: center;
+  }
+
+  .aboutShelter-heading {
+    margin-left: 1.8rem;
+    text-align: center;
+  }
+
+  .aboutShelter-paragraph {
+    margin-left: 1.5rem;
+    margin-top: 2.3rem;
+    text-align: justify;
   }
 }

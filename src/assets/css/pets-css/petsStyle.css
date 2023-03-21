@@ -8,6 +8,11 @@
   --mainPaginWidth: 28.5%;
 }
 
+.pets-box {
+  overflow: hidden;
+  position: relative;
+}
+
 /* @media start */
 
 @media (min-width: 768px) and (max-width: 1279px) {
@@ -16,5 +21,15 @@
     --mainContWidth: 58rem;
     --mainCardWidth: 27rem;
     --mainPaginWidth: 34rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  :root {
+    --mainHeadWidth: 30rem;
+    --mainContWidth: 30rem;
+    --mainCardBoxWidth: 27rem;
+    --mainCardWidth: 27rem;
+    --mainPaginWidth: 30rem;
   }
 }

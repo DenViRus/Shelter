@@ -37,6 +37,14 @@
   color: var(--colorLightxl);
 }
 
+.contacts-heading {
+  width: var(--contactsHeadWidth);
+}
+
+.location-heading {
+  width: var(--locationHeadWidth);
+}
+
 .mail-link,
 .phone-link,
 .boston-link,
@@ -132,6 +140,78 @@
   .section-location {
     margin-left: 0;
     margin-right: 2.3rem;
+  }
+
+  .footer-img-box {
+    align-self: center;
+    margin-left: 1.7rem;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .footer-row {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer-inf-box {
+    margin-left: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .section-contacts,
+  .section-location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .section-contacts {
+    margin-top: 3rem;
+  }
+
+  .section-location {
+    margin-top: 3.8rem;
+  }
+
+  .contacts-heading,
+  .location-heading {
+    text-align: center;
+    margin-left: 1.8rem;
+  }
+
+  .mail-link,
+  .phone-link {
+    margin-left: 1.8rem;
+  }
+
+  .boston-link,
+  .london-link {
+    margin-top: 4rem;
+    margin-right: auto;
+  }
+
+  .boston-link-svg-box,
+  .london-link-svg-box {
+    margin-left: 0.7rem;
+  }
+
+  .boston-link-text {
+    margin-left: 1.85rem;
+  }
+
+  .london-link-text {
+    margin-left: 2.1rem;
+  }
+
+  .boston-link-text {
+    width: calc(100% - 4.5rem);
   }
 
   .footer-img-box {

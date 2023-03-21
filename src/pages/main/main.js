@@ -1,1 +1,1 @@
-import './../../assets/js/main-js/mainApp.js';
+import "./../../assets/js/main-js/mainApp.js";

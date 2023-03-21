@@ -153,3 +153,30 @@
     margin-top: 3.5rem;
   }
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .main {
+    padding-top: 4.1rem;
+    padding-bottom: 4.2rem;
+  }
+
+  .main-heading {
+    margin-left: 1.8rem;
+  }
+
+  .main-content {
+    margin-top: 4.2rem;
+  }
+
+  .main-card-box {
+    flex-direction: column;
+  }
+
+  .main-card:nth-child(n + 4) {
+    display: none;
+  }
+
+  .main-pagination-box {
+    margin-top: 3.7rem;
+  }
+}
