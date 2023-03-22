@@ -9,8 +9,8 @@
 }
 
 .pets-box {
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
 }
 
 /* @media start */

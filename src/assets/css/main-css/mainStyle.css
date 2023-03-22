@@ -37,8 +37,8 @@
 }
 
 .main-box {
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
 }
 
 .startSreen {

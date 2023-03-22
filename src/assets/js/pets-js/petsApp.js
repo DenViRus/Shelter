@@ -12,6 +12,9 @@ const mainBoxHeaderListener1 = (event) => {
     event.preventDefault();
     headerNavBtnItem.classList.toggle("header-nav-btn-item-active");
     headerNavBox.classList.toggle("header-nav-box-opened");
+    mainBox.closest("body").classList.toggle("nav-menu-open");
+
+
   }
 };
 mainBoxHeader.addEventListener("click", mainBoxHeaderListener1);
