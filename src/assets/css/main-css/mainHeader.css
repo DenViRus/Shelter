@@ -244,7 +244,7 @@
   }
 
   .header-nav-box {
-    height: var(--startSreenHeight);
+    height: 100vh;
     background-color: var(--colorDark3xl);
     padding-top: 3.1rem;
     position: absolute;

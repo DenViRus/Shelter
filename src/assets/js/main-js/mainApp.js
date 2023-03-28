@@ -1,17 +1,23 @@
 console.log(window.innerWidth);
 
-const mainBox = document.getElementById("mainBox");
-const mainBoxHeader = mainBox.querySelector(".header");
-const headerNavBox = mainBoxHeader.querySelector(".header-nav-box");
-const headerNavBtn = mainBoxHeader.querySelector(".header-nav-btn");
-const headerNavBtnItem = headerNavBtn.querySelector(".header-nav-btn-item");
+import MainController from "./MainController.js";
+import MainCarousel from "./MainCarousel.js";
 
-const mainBoxHeaderListener1 = (event) => {
-  const target = event.target;
-  if (target.closest(".header-nav-btn")) {
-    event.preventDefault();
-    headerNavBtnItem.classList.toggle("header-nav-btn-item-active");
-    headerNavBox.classList.toggle("header-nav-box-opened");
-  }
-};
-mainBoxHeader.addEventListener("click", mainBoxHeaderListener1);
+import ProjectBurgerMenu from "./../default-js/ProjectBurgerMenu.js";
+import ProjectPopup from "./../default-js/ProjectPopup.js";
+
+import ProjectActions from "./../default-js/ProjectActions.js";
+import ProjectData from "./../default-js/ProjectData.js";
+
+const mainBox = document.getElementById("mainBox");
+
+const projectBurgerMenu = new ProjectBurgerMenu(mainBox);
+
+const projectActions = new ProjectActions();
+const projectPopup = new ProjectPopup(mainBox, projectActions);
+const projectData = new ProjectData(projectActions);
+
+const mainCarousel = new MainCarousel(mainBox, projectPopup, projectData, projectActions);
+
+const mainController = new MainController(mainBox, mainCarousel, projectBurgerMenu);
+mainController.mainControl();

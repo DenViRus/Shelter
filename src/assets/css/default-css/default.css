@@ -11,9 +11,31 @@ html {
   font-weight: 400;
 }
 
-.hidden {
+/* .hidden {
   display: none;
+} */
+
+.nav-menu-open {
+  height: 100vh;
+  overflow-y: hidden;
 }
+
+.nav-menu-open::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(41, 41, 41, 0.6);
+  z-index: 9;
+}
+
+.popup-open {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
 
 :root {
   --headStyle: Georgia, "RobotoSansSerif", sans-serif;
@@ -34,6 +56,7 @@ html {
   --colorPrime: rgb(241, 205, 179);
   --colorPrimeLight: rgb(253, 220, 196);
   --hoverShadow: 0rem 0.2rem 3.5rem 1.4rem rgba(13, 13, 13, 0.04);
+
 
   --mainRowWidth: 1200px;
 
@@ -74,6 +97,24 @@ html {
   --locationHeadWidth: 100%;
 
   --footerImgWidth: 25%;
+
+  --popupWidth: 75%;
+
+  --popupContWidth: 100%;
+
+  --popupImgWidth: 55.57%;
+  --popupInfWidth: 39%;
+
+  --popupHeadFZ: 3.5rem;
+  --popupHeadLH: 1.3em;
+
+  --popupSubHeadFZ: 2rem;
+  --popupSubHeadLH: 1.15em;
+
+  --popupDescFZ: 1.5rem;
+  --popupDescLH: 1.1em;
+
+
 }
 
 .row {
@@ -123,6 +164,7 @@ html {
   :root {
     --maxMainRowWidth: 1200px;
     --minMainRowWidth: 748px;
+    --mainRowWidth: calc(100% - 2rem);
 
     --headerLogoWidth: 19rem;
     --headerNavWidth: 44.3rem;
@@ -132,12 +174,18 @@ html {
     --contactsWidth: 28rem;
     --locationWidth: 30.5rem;
     --footerImgWidth: 30rem;
+
+    --popupWidth: 63rem;
+
+    --popupImgWidth: 35rem;
+    --popupInfWidth: 26.5rem;
+
+
   }
 
   .row {
     max-width: var(--maxMainRowWidth);
     min-width: var(--minMainRowWidth);
-    width: calc(100% - 2rem);
   }
 }
 
@@ -145,6 +193,7 @@ html {
   :root {
     --maxMainRowWidth: 747px;
     --minMainRowWidth: 300px;
+    --mainRowWidth: calc(100% - 2rem);
 
     --headerLogoWidth: 19rem;
 
@@ -159,11 +208,13 @@ html {
     --contactsHeadWidth: 23rem;
     --locationHeadWidth: 27rem;
     --footerImgWidth: 26rem;
+
+    --popupWidth: 24rem;
+    --popupInfWidth: 22rem;
   }
 
   .row {
     max-width: var(--maxMainRowWidth);
     min-width: var(--minMainRowWidth);
-    width: calc(100% - 2rem);
   }
 }

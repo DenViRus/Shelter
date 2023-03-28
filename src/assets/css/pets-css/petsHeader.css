@@ -227,7 +227,7 @@
 
 @media (min-width: 320px) and (max-width: 767px) {
   .header-nav-box {
-    height: 82.3rem;
+    height: 100vh;
     background-color: var(--colorDark3xl);
     padding-top: 3.1rem;
     position: absolute;

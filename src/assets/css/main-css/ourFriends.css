@@ -54,6 +54,7 @@
   width: var(--ourFriendsSlidWidth);
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 .ourFriends-slider-card {
@@ -129,6 +130,34 @@
   background-color: var(--colorPrime);
   scale: 100%;
 }
+
+/* slider animation start */
+.slider-card-goLeft {
+  position: relative;
+  animation: goLeft .3s ease-in-out;
+}
+
+.slider-card-goRight {
+  position: relative;
+  animation: goRight .3s ease-in-out;
+}
+
+@keyframes goLeft {
+  0% {left: 0; visibility: visible;}
+  50% {left: -120rem; visibility: hidden;}
+  75% {left: 100rem; visibility: hidden}
+  100% {left: 0; visibility: visible;}
+}
+
+@keyframes goRight {
+  0% {right: 0; visibility: visible;}
+  50% {right: -120rem; visibility: hidden;}
+  75% {right: 100rem; visibility: hidden}
+  100% {right: 0; visibility: visible;}
+}
+/* slider animation finish */
+
+
 
 /* @media start */
 
