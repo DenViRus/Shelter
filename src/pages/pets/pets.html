@@ -11,6 +11,54 @@
   </head>
   <body>
     <div class="pets-box" id="petsBox">
+      <!-- popup start -->
+      <div class="popup-box hidden" id="popupBox">
+        <div class="row popup-row">
+          <div class="popup" id="popup">
+
+            <button class="popup-close-button" id="popupCloseButton">
+              <svg class="popup-close-icon" width="12" height="12" viewBox="0 0 12 12" fill="rgb(41, 41, 41)" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7.42618 6.00003L11.7046 1.72158C12.0985 1.32775 12.0985 0.689213 11.7046 0.295433C11.3108 -0.0984027 10.6723 -0.0984027 10.2785 0.295433L5.99998 4.57394L1.72148 0.295377C1.32765 -0.098459 0.68917 -0.098459 0.295334 0.295377C-0.0984448 0.689213 -0.0984448 1.32775 0.295334 1.72153L4.57383 5.99997L0.295334 10.2785C-0.0984448 10.6723 -0.0984448 11.3108 0.295334 11.7046C0.68917 12.0985 1.32765 12.0985 1.72148 11.7046L5.99998 7.42612L10.2785 11.7046C10.6723 12.0985 11.3108 12.0985 11.7046 11.7046C12.0985 11.3108 12.0985 10.6723 11.7046 10.2785L7.42618 6.00003Z"
+                />
+              </svg>
+            </button>
+
+            <div class="popup-content">
+              <div class="popup-img-box">
+                <img class="popup-img" src="" alt="" />
+              </div>
+
+              <div class="popup-inf-box">
+                <h3 class="heading popup-heading"></h3>
+                <h4 class="heading popup-sub-heading"></h4>
+                <h5 class="heading popup-description"></h5>
+                <ul class="popup-list">
+                  <li class="popup-item popup-item-age">
+                    <h5 class="heading popup-item-prop popup-item-age-prop">Age:</h5>
+                    <h5 class="heading popup-item-val popup-item-age-val"></h5>
+                  </li>
+                  <li class="popup-item popup-item-inoculations">
+                    <h5 class="heading  popup-item-prop popup-item-inoculations-prop">Inoculations:</h5>
+                    <h5 class="heading popup-item-val popup-item-inoculations-val"></h5>
+                  </li>
+                  <li class="popup-item popup-item-diseases">
+                    <h5 class="heading popup-item-prop popup-item-diseases-prop">Diseases:</h5>
+                    <h5 class="heading popup-item-val popup-item-diseases-val"></h5>
+                  </li>
+                  <li class="popup-item popup-item-parasites">
+                    <h5 class="heading popup-item-prop popup-item-parasites-prop">Parasites:</h5>
+                    <h5 class="heading popup-item-val popup-item-parasites-val"></h5>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- popup finish -->
+
       <!-- header start -->
       <header class="header" id="header">
         <div class="row header-row">

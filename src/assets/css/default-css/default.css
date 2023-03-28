@@ -11,9 +11,9 @@ html {
   font-weight: 400;
 }
 
-.hidden {
+/* .hidden {
   display: none;
-}
+} */
 
 .nav-menu-open {
   height: 100vh;
@@ -30,6 +30,12 @@ html {
   background-color: rgba(41, 41, 41, 0.6);
   z-index: 9;
 }
+
+.popup-open {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
 
 :root {
   --headStyle: Georgia, "RobotoSansSerif", sans-serif;
@@ -51,7 +57,7 @@ html {
   --colorPrimeLight: rgb(253, 220, 196);
   --hoverShadow: 0rem 0.2rem 3.5rem 1.4rem rgba(13, 13, 13, 0.04);
 
-  
+
   --mainRowWidth: 1200px;
 
   --headerLogoWidth: 15.5%;
@@ -91,6 +97,24 @@ html {
   --locationHeadWidth: 100%;
 
   --footerImgWidth: 25%;
+
+  --popupWidth: 75%;
+
+  --popupContWidth: 100%;
+
+  --popupImgWidth: 55.57%;
+  --popupInfWidth: 39%;
+
+  --popupHeadFZ: 3.5rem;
+  --popupHeadLH: 1.3em;
+
+  --popupSubHeadFZ: 2rem;
+  --popupSubHeadLH: 1.15em;
+
+  --popupDescFZ: 1.5rem;
+  --popupDescLH: 1.1em;
+
+
 }
 
 .row {
@@ -150,6 +174,13 @@ html {
     --contactsWidth: 28rem;
     --locationWidth: 30.5rem;
     --footerImgWidth: 30rem;
+
+    --popupWidth: 63rem;
+
+    --popupImgWidth: 35rem;
+    --popupInfWidth: 26.5rem;
+
+
   }
 
   .row {
@@ -177,6 +208,9 @@ html {
     --contactsHeadWidth: 23rem;
     --locationHeadWidth: 27rem;
     --footerImgWidth: 26rem;
+
+    --popupWidth: 24rem;
+    --popupInfWidth: 22rem;
   }
 
   .row {
