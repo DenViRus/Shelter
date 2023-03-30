@@ -7,37 +7,40 @@ export default class ProjectBurgerMenu {
     this.hdrNavBtnItm = this.hdrNavBtn.querySelector(".header-nav-btn-item");
   }
 
-  toggleBurger() {
-    this.hdrNavBtnItm.classList.toggle("header-nav-btn-item-active");
-    this.hdrNavBox.classList.toggle("header-nav-box-opened");
-    this.box.closest("body").classList.toggle("nav-menu-open");
+  showMenu() {
+    this.hdrNavBtnItm.classList.add("header-nav-btn-item-active");
+    this.hdrNavBox.classList.add("header-nav-box-opened");
+    this.box.closest("body").classList.add("nav-menu-open");
   }
 
-burgerLstnr1 = (event) => {
-  const target = event.target;
-
-  if (target.closest(".header-nav-btn")) {
-    event.preventDefault();
-    this.toggleBurger();
+  hideMenu() {
+    this.hdrNavBtnItm.classList.remove("header-nav-btn-item-active");
+    this.hdrNavBox.classList.remove("header-nav-box-opened");
+    this.box.closest("body").removeAttribute("class");
   }
 
-  if (target.closest('.nav-menu-open') && target.closest('.header-nav-item')) {
-    this.toggleBurger();
-  }
+  burgerLstnr1 = (event) => {
+    const target = event.target;
 
-  if (target.closest('.nav-menu-open') && !target.closest('.header-nav-box') && !target.closest('.header-nav-btn')) {
-    event.preventDefault();
-    this.toggleBurger();
-  }
+    if (target.closest(".header-nav-btn") && !target.closest(".nav-menu-open")) {
+      event.preventDefault();
+      this.showMenu();
+    } else if (target.closest(".header-nav-btn") && target.closest(".nav-menu-open")) {
+      event.preventDefault();
+      this.hideMenu();
+    }
 
-  if (target.closest('.nav-menu-open') && target.closest('.header-nav-box')) {
-    event.preventDefault();
-    return;
-  }
-};
+    if (target.closest(".nav-menu-open") && !target.closest(".header-nav-box") && !target.closest(".header-nav-btn")) {
+      event.preventDefault();
+      this.hideMenu();
+    }
+
+    if (target.closest(".nav-menu-open") && target.closest(".header-nav-item")) {
+      this.hideMenu();
+    }
+  };
 
   burgerMenuControl() {
     document.addEventListener("click", this.burgerLstnr1);
-
   }
 }

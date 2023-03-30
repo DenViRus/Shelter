@@ -34,7 +34,7 @@ export default class ProjectPopup {
 
   hidePopup() {
     this.pppBox.classList.add("hidden");
-    this.box.closest("body").classList.remove("popup-open");
+    this.box.closest("body").removeAttribute("class");
     this.img.src = '';
     this.img.alt = '';
     this.pppHead.textContent = '';
@@ -49,7 +49,7 @@ export default class ProjectPopup {
   popupLstnr1 = (event) => {
     const target = event.target;
 
-    if (target.closest(".popup-close-button")) {
+    if (target.closest(".popup-close-button") || !target.closest(".popup") && target.closest(".popup-box")) {
       event.preventDefault();
       this.hidePopup();
     }

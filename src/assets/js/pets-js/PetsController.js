@@ -1,18 +1,17 @@
 export default class PetsController {
-  constructor(box, burger, data, actions) {
+  constructor(box, pagination, burger) {
     this.box = box;
+    this.pagination = pagination;
     this.burger = burger;
-
-    this.data = data;
-    this.actions = actions;
   }
 
 
   petsControl() {
+    this.pagination.petsPaginationControl();
 
     this.burger.burgerMenuControl();
 
-    
+
 
   }
 }
