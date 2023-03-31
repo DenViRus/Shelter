@@ -67,10 +67,8 @@ export default class ProjectActions {
       vsblCardsAmount = pgnData.vsblCards[2];
     }
     const pageAmount = pgnData.allCards / vsblCardsAmount;
-    return `${vsblCardsAmount}-${pageAmount}`
+    return `${vsblCardsAmount}-${pageAmount}`;
   }
-
-
 
   getPgnNumbState(cardAmount, pgnData) {
     const numbState = {};

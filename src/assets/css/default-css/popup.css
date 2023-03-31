@@ -130,12 +130,12 @@
 
 .popup-item::before {
   background-color: var(--colorPrime);
-  content: '';
-  width: .5rem;
-  height: .5rem;
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
   flex-shrink: 0;
 
-  border-radius: .2rem;
+  border-radius: 0.2rem;
 }
 
 .popup-item:nth-child(n + 2) {
@@ -192,7 +192,6 @@
 
   .popup-close-button {
     right: -3rem;
-
   }
 
   .popup-content {
@@ -208,7 +207,7 @@
   }
 
   .popup-heading,
-  .popup-sub-heading  {
+  .popup-sub-heading {
     margin-top: 1rem;
     text-align: center;
   }

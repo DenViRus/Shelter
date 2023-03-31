@@ -5,12 +5,9 @@ export default class MainController {
     this.burger = burger;
   }
 
-
   mainControl() {
     this.carousel.mainCarouselControl();
 
     this.burger.burgerMenuControl();
-
-
   }
 }

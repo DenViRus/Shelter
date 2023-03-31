@@ -11,31 +11,15 @@ html {
   font-weight: 400;
 }
 
-/* .hidden {
-  display: none;
-} */
-
 .nav-menu-open {
-  height: 100vh;
+  height: 100%;
   overflow-y: hidden;
-}
-
-.nav-menu-open::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(41, 41, 41, 0.6);
-  z-index: 9;
 }
 
 .popup-open {
   height: 100vh;
   overflow-y: hidden;
 }
-
 
 :root {
   --headStyle: Georgia, "RobotoSansSerif", sans-serif;
@@ -56,7 +40,6 @@ html {
   --colorPrime: rgb(241, 205, 179);
   --colorPrimeLight: rgb(253, 220, 196);
   --hoverShadow: 0rem 0.2rem 3.5rem 1.4rem rgba(13, 13, 13, 0.04);
-
 
   --mainRowWidth: 1200px;
 
@@ -113,8 +96,6 @@ html {
 
   --popupDescFZ: 1.5rem;
   --popupDescLH: 1.1em;
-
-
 }
 
 .row {
@@ -179,8 +160,6 @@ html {
 
     --popupImgWidth: 35rem;
     --popupInfWidth: 26.5rem;
-
-
   }
 
   .row {
@@ -216,5 +195,32 @@ html {
   .row {
     max-width: var(--maxMainRowWidth);
     min-width: var(--minMainRowWidth);
+  }
+
+  .nav-menu-open::before {
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 32rem;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(41, 41, 41, 0.6);
+    z-index: 6;
+    animation: boom 0.3s ease-in-out;
+  }
+
+  @keyframes boom {
+    0% {
+      background-color: rgba(41, 41, 41, 0);
+    }
+    50% {
+      background-color: rgba(41, 41, 41, 0.2);
+    }
+    75% {
+      background-color: rgba(41, 41, 41, 0.4);
+    }
+    100% {
+      background-color: rgba(41, 41, 41, 0.6);
+    }
   }
 }

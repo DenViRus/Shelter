@@ -3,7 +3,6 @@ export default class ProjectPopup {
     this.box = box;
     this.actions = actions;
 
-
     this.pppBox = this.box.querySelector(".popup-box");
     this.pppCont = this.pppBox.querySelector(".popup-content");
 
@@ -35,34 +34,27 @@ export default class ProjectPopup {
   hidePopup() {
     this.pppBox.classList.add("hidden");
     this.box.closest("body").removeAttribute("class");
-    this.img.src = '';
-    this.img.alt = '';
-    this.pppHead.textContent = '';
-    this.pppSubHead.textContent = '';
-    this.pppDesc.textContent = '';
-    this.pppItemAgeVal.textContent = '';
-    this.pppItemInocVal.textContent = '';
-    this.pppItemDisVal.textContent = '';
-    this.pppItemParVal.textContent = '';
+    this.img.src = "";
+    this.img.alt = "";
+    this.pppHead.textContent = "";
+    this.pppSubHead.textContent = "";
+    this.pppDesc.textContent = "";
+    this.pppItemAgeVal.textContent = "";
+    this.pppItemInocVal.textContent = "";
+    this.pppItemDisVal.textContent = "";
+    this.pppItemParVal.textContent = "";
   }
 
   popupLstnr1 = (event) => {
     const target = event.target;
 
-    if (target.closest(".popup-close-button") || !target.closest(".popup") && target.closest(".popup-box")) {
+    if (target.closest(".popup-close-button") || (!target.closest(".popup") && target.closest(".popup-box"))) {
       event.preventDefault();
       this.hidePopup();
     }
-
-
-  }
-
-
+  };
 
   popupControl() {
     document.addEventListener("click", this.popupLstnr1);
-
   }
-
-
 }
