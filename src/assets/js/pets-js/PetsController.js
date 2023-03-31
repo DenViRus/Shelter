@@ -5,13 +5,9 @@ export default class PetsController {
     this.burger = burger;
   }
 
-
   petsControl() {
     this.pagination.petsPaginationControl();
 
     this.burger.burgerMenuControl();
-
-
-
   }
 }

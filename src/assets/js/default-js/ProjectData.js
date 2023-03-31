@@ -8,16 +8,14 @@ export default class ProjectData {
 
   async getPetsData() {
     let ordNum = 0;
-    return ([...(await this.actions.getDataReq(this.petsDataUrl))].map((item) => {
+    return [...(await this.actions.getDataReq(this.petsDataUrl))].map((item) => {
       item["id"] = `${item.type}${item.breed}${item.name}`.replace(/\W/g, "").replace(/(.)\1+/g, "$1");
       item["ordNum"] = ++ordNum;
       return item;
-    }));
+    });
   }
 
   async projectDataControl() {
-
     this.petsData = await this.getPetsData();
-
   }
 }

@@ -52,7 +52,7 @@ export default class MainCarousel {
       this.rightNumbArr ? (this.randNumbArr = this.rightNumbArr) : (this.randNumbArr = this.actions.getRandArr(1, this.petsData.length, this.sldrNumbArr));
       this.leftNumbArr = this.sldrNumbArr;
       this.rightNumbArr = null;
-      this.crslSldrArr.forEach((item) => item.classList.add('slider-card-goLeft'));
+      this.crslSldrArr.forEach((item) => item.classList.add("slider-card-goLeft"));
       setTimeout(() => this.crslSldrArr.forEach((item) => item.classList.remove("slider-card-goLeft")), 300);
       setTimeout(() => this.showSlider(), 150);
     }
@@ -62,7 +62,7 @@ export default class MainCarousel {
       this.leftNumbArr ? (this.randNumbArr = this.leftNumbArr) : (this.randNumbArr = this.actions.getRandArr(1, this.petsData.length, this.sldrNumbArr));
       this.rightNumbArr = this.sldrNumbArr;
       this.leftNumbArr = null;
-      this.crslSldrArr.forEach((item) => item.classList.add('slider-card-goRight'));
+      this.crslSldrArr.forEach((item) => item.classList.add("slider-card-goRight"));
       setTimeout(() => this.crslSldrArr.forEach((item) => item.classList.remove("slider-card-goRight")), 300);
       setTimeout(() => this.showSlider(), 150);
     }
