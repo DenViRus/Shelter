@@ -183,12 +183,12 @@
   .contacts-heading,
   .location-heading {
     text-align: center;
-    margin-left: 1.8rem;
+    margin-left: 1rem;
   }
 
   .mail-link,
   .phone-link {
-    margin-left: 1.8rem;
+    margin-left: 1rem;
   }
 
   .boston-link,
@@ -199,12 +199,12 @@
 
   .boston-link-svg-box,
   .london-link-svg-box {
-    margin-left: 0.7rem;
+    margin-left: 1rem;
   }
 
   .boston-link-text,
   .london-link-text {
-    margin-left: 1.9rem;
+    margin-left: 1.5rem;
   }
 
   .boston-link-text {
@@ -213,7 +213,7 @@
 
   .footer-img-box {
     align-self: center;
-    margin-left: 1.7rem;
+    margin-left: 0;
     margin-right: 0;
   }
 }

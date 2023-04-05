@@ -214,12 +214,12 @@
   }
 
   .ourFriends-heading {
-    margin-left: 1.8rem;
+    margin-left: 1rem;
   }
 
   .ourFriends-slider-box {
     margin-top: 4rem;
-    margin-left: 1.8rem;
+    margin-left: 1rem;
     justify-content: center;
     position: relative;
   }
@@ -234,15 +234,15 @@
   }
 
   .ourFriends-prev-button {
-    left: 5.5rem;
+    left: 5rem;
   }
 
   .ourFriends-next-button {
-    right: 5.5rem;
+    right: 5rem;
   }
 
   .ourFriends-link {
     margin-top: 11.2rem;
-    margin-left: 1.8rem;
+    margin-left: 1rem;
   }
 }

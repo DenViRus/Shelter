@@ -110,12 +110,12 @@
   }
 
   .donation-img-box {
-    margin-left: 1.6rem;
+    margin-left: 0;
     margin-top: 4.3rem;
   }
 
   .donation-content-box {
-    margin-left: 1.7rem;
+    margin-left: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
