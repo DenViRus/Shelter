@@ -93,16 +93,10 @@
 
   .notOnly-heading {
     letter-spacing: var(--headLS);
-    margin-left: 1.8rem;
   }
 
   .notOnly-paragraph {
     width: var(--notOnlyParagWidth);
-    margin-left: 1.5rem;
-  }
-
-  .notOnly-link {
-    margin-left: 1.5rem;
   }
 
   .notOnly-img-box {
